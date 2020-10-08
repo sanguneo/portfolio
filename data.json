@@ -1,0 +1,726 @@
+{
+  "title": "PORTFOLIO",
+  "subtitle": "2019 나상권<br><span>sknah0319@gmail.com<br>http://portfolio.sanguneo.com/</span>",
+  "desc": "그동안 공부하고 개발해온 작업들을 모아두었습니다.<br> 이미지를 클릭하면, 확대된 이미지와, 그 이미지에 대한 설명을 볼 수 있습니다.<br>히스토리 <strong>인쇄시에는</strong> 히스토리가 가로방향으로, 현재설명은 제외하고 인쇄됩니다.<br>히스토리는 2019년 이전의 내용입니다.<br><span>인쇄시 배경그래픽 인쇄를 반드시 체크해주세요.</span>",
+  "history": "./history.png",
+  "projects": [
+    {
+      "code": "mysite",
+      "title": "개인사이트 개발 ( 2015. 08 ~ 2015. 11 )",
+      "img": "./projects/mysite/videoplayer.png",
+      "desc": "2015년 좋은 기회가 생겨 고용량의 개인 서버를 세팅할 수 있게 되었었다.<br>당시 공부와 분석을 목적으로 필요한 웹 프로그래밍을 시작하다, 요청에 의해 블로그에도 배포하였다.",
+      "tech": [
+        "환경 : Linux (Ubuntu)",
+        "언어 : PHP7.0, JS",
+        "라이브러리 : JQuery"
+      ],
+      "projects": [
+        {
+          "code": "photoalbum",
+          "title": "포토앨범",
+          "img": "./projects/mysite/001 photoalbum.png",
+          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
+          "screens": [
+            {
+              "title": "001 포토앨범",
+              "img": "./projects/mysite/001 photoalbum.png",
+              "desc": "포토앨범 이미지 목록 화면<br>하위 디렉터리도 확인가능하며 썸네일을 사용해 확인이 빠르도록 설계함."
+            },
+            {
+              "title": "002 포토앨범 뷰",
+              "img": "./projects/mysite/002 photoalbumview.png",
+              "desc": "이미지 클릭 시 뜨는 뷰어<br>swipebox을 커스터마이징한 뷰어"
+            }
+          ]
+        },
+        {
+          "code": "musicplayer",
+          "title": "뮤직 플레이어",
+          "img": "./projects/mysite/musicplayer.png",
+          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
+          "screens": [
+            {
+              "title": "뮤직 플레이어",
+              "img": "./projects/mysite/musicplayer.png",
+              "desc": "뮤직 플레이어 화면<br>jQuery 이용 mp3, ogg 등의 사운드 플레이<br>반복, 한곡반복, 가능"
+            }
+          ]
+        },
+        {
+          "code": "videoplayer",
+          "title": "비디오 플레이어",
+          "img": "./projects/mysite/videoplayer.png",
+          "desc": "웹 스트리밍으로 이용 가능한 영상들을 스트리밍 해준다.<br>< video > 는 특수하게 WebVTT 자막만을 이용하는데, 이는 srt자막과 유사하다. 그러나 이런 자막파일이 없는 경우가 대부분이어서 smi 자막을 파싱하여 HTML5 Video에서도 자막을 볼 수 있도록 해준다.<br>html5 비디오의 자막은 검은 바탕을 사용하는데 이 부분도 보완하여 적용했다.",
+          "screens": [
+            {
+              "title": "비디오 플레이어",
+              "img": "./projects/mysite/videoplayer.png",
+              "desc": "웹 스트리밍으로 이용 가능한 영상들을 스트리밍 해준다.<br>< video > 는 특수하게 WebVTT 자막만을 이용하는데, 이는 srt자막과 유사하다. 그러나 이런 자막파일이 없는 경우가 대부분이어서 smi 자막을 파싱하여 HTML5 Video에서도 자막을 볼 수 있도록 해준다.<br>html5 비디오의 자막은 검은 바탕을 사용하는데 이 부분도 보완하여 적용했다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "inkrkamus",
+      "title": "인한사전 InKrKamus 개발 ( 2010. 10 ~ )",
+      "img": "./projects/inkrkamus/web/PCWEB001 wordsearch.png",
+      "desc": "인도네시아 협력요원으로 파견되기전 언어 공부 몇달, 그리고 파견되어서 몇달 간<br>새로운 언어를 학습한다는게 얼마나 힘든지 깨닫게 되었다.<br> 살아야하니 현지인과 부딫히며 깨우쳤지만, 한단계 더 높은 수준이 되려면 체계적인 학습이 필요했다.<br> 마침 동기 봉사단원들로부터 얻은 엑셀자료와 근처 한인들에게 얻은 자료들이 있었으나,<br> 이를 사용하기엔 매우 불편했다. 그래서 이것들을 다 합쳐서 편하게 만들고자 한달정도 C++로 사전 프로그램을 제작했고,<br> 인도네시아 커뮤니티, 한국외대, 그리고 현재까지도 KOICA 단원들에게 전해지고 있다.<br> <br> 아쉬운건 이것이 윈도우PC에서만 동작한다는 것이었고, 많은 사용자들이 요구함에 따라, 웹버전을 제작, 플랫폼에 제한없는 어플리케이션을 제작했다.<br> <br> 구) 윈도우PC 버전 <a href='http://blog.sanguneo.com/35'>http://blog.sanguneo.com/35</a> <br>            신) 웹 버전 <a href='http://inkrkamus.sanguneo.com/'>http://inkrkamus.sanguneo.com/</a>",
+      "tech": [],
+      "projects": [
+        {
+          "code": "win32",
+          "title": "윈도우 프로그램",
+          "img": "./projects/inkrkamus/win32/003 chooseword.png",
+          "desc": "C++를 이용해 윈도우 어플리케이션 사전을 개발하였다.<br>다국어지원 윈도우 프로그램을 제작하는데 시간이 오래걸렸다.",
+          "tech": [
+            "환경 : Windows",
+            "언어 : C++",
+            "API : Win32 Api",
+            "DB : Sqlite3"
+          ],
+          "screens": [
+            {
+              "title": "001 설치화면",
+              "img": "./projects/inkrkamus/win32/001 install.png",
+              "desc": "응용프로그램 설치패키지를 만들어 배포"
+            },
+            {
+              "title": "002 초기화면",
+              "img": "./projects/inkrkamus/win32/002 initial.png",
+              "desc": "프로그램 실행시 뜨는 메인화면"
+            },
+            {
+              "title": "003 단어선택",
+              "img": "./projects/inkrkamus/win32/003 chooseword.png",
+              "desc": "좌측 단어목록에서 단어를 선택"
+            },
+            {
+              "title": "004 한글로찾기",
+              "img": "./projects/inkrkamus/win32/004 searchhangul.png",
+              "desc": "한글을 이용해 해당하는 인도네시아 단어 검색"
+            },
+            {
+              "title": "005 로마자변환",
+              "img": "./projects/inkrkamus/win32/005 romanize.png",
+              "desc": "한글을 읽지못하는 외국인들을 위해 표준 로마자로 변환"
+            }
+          ]
+        },
+        {
+          "code": "web",
+          "title": "PC웹",
+          "img": "./projects/inkrkamus/web/PCWEB001 wordsearch.png",
+          "desc": "원래는 Electron 으로 윈도우 어플리케이션을 제작하였으나, 용량등의 이유로 웹어플리케이션으로 다시 제작하였다.",
+          "tech": [
+            "개발환경 : Linux (Ubuntu)",
+            "언어 : Javascript",
+            "서버 : NodeJS (heroku 이용)",
+            "프레임워크 : VueJS 1",
+            "DB : Sqlite3"
+          ],
+          "screens": [
+            {
+              "title": "001 단어검색",
+              "img": "./projects/inkrkamus/web/PCWEB001 wordsearch.png",
+              "desc": "단어를 검색 후 최상위 결과를 자동으로 보여줌<br> (데이터 절약을 위해 전체목록표시는 기본적으로 하지 않음)"
+            },
+            {
+              "title": "002 한글검색",
+              "img": "./projects/inkrkamus/web/PCWEB002 hangulsearch.png",
+              "desc": "한글을 이용해 검색"
+            },
+            {
+              "title": "003 로마자변환",
+              "img": "./projects/inkrkamus/web/PCWEB003 romanize.png",
+              "desc": "로마자 변환"
+            },
+            {
+              "title": "004 전체목록보기",
+              "img": "./projects/inkrkamus/web/PCWEB004 wordlist.png",
+              "desc": "단어장으로 활용하는 등의 용도를 위해 전체목록을 표시<br>데이터 절약을 위해 붙인 기능"
+            },
+            {
+              "title": "006 템플릿",
+              "img": "./projects/inkrkamus/web/PCWEB006 template.png",
+              "desc": "사전어플리케이션의 표시언어를 변환하기위해 사용<br>VueJS v1을 간단히 이용했다."
+            },
+            {
+              "title": "007 사전언어선택",
+              "img": "./projects/inkrkamus/web/PCWEB007 chooselang.png",
+              "desc": "사전을 사용할 언어를 선택, 템플릿을 치환"
+            },
+            {
+              "title": "008 언어선택인도네시아",
+              "img": "./projects/inkrkamus/web/PCWEB008 chooseindonesia.png",
+              "desc": "인도네시아어 선택시"
+            }
+          ]
+        },
+        {
+          "code": "mobile",
+          "title": "모바일웹",
+          "img": "./projects/inkrkamus/web/MOBILEWEB002 search.png",
+          "desc": "모바일환경에 최적화된 모바일 웹",
+          "tech": [
+            "개발환경 : Linux (Ubuntu)",
+            "서버 : NodeJS",
+            "언어 : Javascript",
+            "프레임워크 : VueJS 1",
+            "DB : Sqlite3"
+          ],
+          "screens": [
+            {
+              "title": "001 영어버전정보",
+              "img": "./projects/inkrkamus/web/MOBILEWEB001 versioninfo.png",
+              "desc": "영어 버전 실행시 정보<br>특별히 새단어 추가 기능을 만들었으나 보완중"
+            },
+            {
+              "title": "002 일반검색",
+              "img": "./projects/inkrkamus/web/MOBILEWEB002 search.png",
+              "desc": "일반 검색기능"
+            },
+            {
+              "title": "003 로마자 표기",
+              "img": "./projects/inkrkamus/web/MOBILEWEB003 romanize.png",
+              "desc": "한글 표준 로마자표기로 변환"
+            },
+            {
+              "title": "004 단어 리스트",
+              "img": "./projects/inkrkamus/web/MOBILEWEB004 wordlist.png",
+              "desc": "단어 검색시 리스트 출력"
+            },
+            {
+              "title": "005 한글 검색",
+              "img": "./projects/inkrkamus/web/MOBILEWEB005 hangulsearch.png",
+              "desc": "한글이용 검색기능"
+            }
+          ]
+        }
+      ],
+      "screens": [
+      ]
+    },
+    {
+      "code": "apmcharts",
+      "title": "APM 솔루션의 차트개발 ( 2015. 05 ~ 2017. 02 )",
+      "img": "./projects/apmcharts/funnel.png",
+      "desc": "APM 솔루션의 특성상 데이터의 양, 속도, 부하 등을 매우 민감하게 분석할 수 있어야 한다.<br> 사실상 분석이라는 건 메모리사용량이나 네트워크 속도들을 직접 커맨드로 확인할 수 있지만,<br> 이런 작업들이 눈에 띄지 않고, 분석이 힘들다.<br>이를 해결하기 위해 시각화 작업을 하였다.<br><br><a href='http://blog.sanguneo.com/30'>http://blog.sanguneo.com/30</a> 에<br>이에 대해 학습한 내용을 정리했다.",
+      "tech": [
+        "개발환경 : Linux (Ubuntu)",
+        "언어 : Javascript (VanillaJS)"
+      ],
+      "screens": [
+        {
+          "title": "깔대기차트",
+          "img": "./projects/apmcharts/funnel.png",
+          "desc": "서비스 트렌젝션의 처리량과 그 상태 통계 등을 나타내고, 처리속도를 구분 할 수 있는 차트로, 차트의 색과 위치 크기만으로 서비스 상태 진단이 가능하다."
+        },
+        {
+          "title": "트랜드차트",
+          "img": "./projects/apmcharts/trend.png",
+          "desc": "각각 서비스들을 구분하여 처리량과 처리속도, 그 외 부하 등의 히스토리를 한눈에 볼 수 있도록 하여, 병목구간이 어느 서비스에 많은지 등을 확인할 수 있도록 한다."
+        }
+      ]
+    },
+    {
+      "code": "eventmodule",
+      "title": "이벤트 모듈 개발 ( 2017. 07 ~ 2017. 08, 2018. 09 )",
+      "img": "./projects/eventmodule/roulette.jpg",
+      "desc": "서비스에서 범용적으로 사용이 가능한 이벤트 모듈을 개발하였다.",
+      "tech": [
+        "언어 : Javascript (VanillaJS)",
+        "라이브러리 : JQuery (필요시 추가로드)"
+      ],
+      "screens": [
+        {
+          "title": "룰렛",
+          "img": "./projects/eventmodule/roulette.jpg",
+          "desc": "start하면 빙글빙글 돌다가 포인트에 당첨이 된다. 각각 포인트는 확률 조절 가능"
+        },
+        {
+          "title": "타임이벤트",
+          "img": "./projects/eventmodule/time.png",
+          "desc": "정해진 시간 내에만 반짝 열리는 이벤트로 남은 시간이 초단위로 표시"
+        }
+      ]
+    },
+    {
+      "code": "hairpin",
+      "title": "hair.pin 서비스개발 ( 2017. 06 ~ )",
+      "img": "./projects/hairpin/app/001 main.jpg",
+      "desc": "헤어다자이너 등의 미용업계 종사자나, 고객들 모두 이용할 수 있는 디자인 공유 앨범서비스<br> ReactJS, React Native, Redux-thunk, MongoDB, NodeJS, Sqlite3, Android, Swift 등의 언어를 이용하였고 현재 원스토어 마켓에 등록되어있다.",
+      "tech": [],
+      "projects": [
+        {
+          "code": "app",
+          "title": "모바일 어플리케이션(IOS/ANDROID)",
+          "img": "./projects/hairpin/app/003 design.jpg",
+          "desc": "모바일 네이티브 어플리케이션을 개발하였다.<br>react-navigation를 사용하여 네비게이션을 구현하였다.",
+          "tech": [
+            "언어 : JS (->IOS/ANDROID)",
+            "프레임워크 : React Native, Redux-thunk",
+            "DB : Sqlite3"
+          ],
+          "screens": [
+            {
+              "title": "000 아이콘",
+              "img": "./projects/hairpin/app/000 icon.jpg",
+              "desc": "앱실행 아이콘"
+            },
+            {
+              "title": "001 메인화면",
+              "img": "./projects/hairpin/app/001 main.jpg",
+              "desc": "앱의 메인화면, 직접 디자인한 로고"
+            },
+            {
+              "title": "002 로그인",
+              "img": "./projects/hairpin/app/002 login.jpg",
+              "desc": "로그인 화면"
+            },
+            {
+              "title": "003 디자인목록",
+              "img": "./projects/hairpin/app/003 design.jpg",
+              "desc": "등록된 디자인들 목록을 FlatList 로 구현<br>Lazy Loading 을 지원"
+            },
+            {
+              "title": "004 디자인 등록",
+              "img": "./projects/hairpin/app/004 writedesign.jpg",
+              "desc": "디자인을 등록할 수 있는 디자인 등록 부분"
+            },
+            {
+              "title": "005 디자인 뷰",
+              "img": "./projects/hairpin/app/005 viewdesign.jpg",
+              "desc": "등록된 디자인을 보는 부분"
+            },
+            {
+              "title": "006 디자인 확대보기",
+              "img": "./projects/hairpin/app/006 zoomdesign.jpg",
+              "desc": "디자인을 자세히 볼 수 있는 부분"
+            },
+            {
+              "title": "007 태그목록",
+              "img": "./projects/hairpin/app/007 tags.jpg",
+              "desc": "내가 등록한 태그들을 모아놓음,<br>( 태그를 등록한 모든 디자인들이 나온다 )"
+            }
+          ]
+        },
+        {
+          "code": "web",
+          "title": "웹 서비스",
+          "img": "./projects/hairpin/web/004 taglist.png",
+          "desc": "웹 클라이언트, 디자인들을 확인할 수 있는 페이지이다.",
+          "tech": [
+            "언어 : Javascript",
+            "프레임워크 : ReactJS, Redux-thunk",
+            "서버 : NodeJS Express",
+            "DB : MongoDB"
+          ],
+          "screens": [
+            {
+              "title": "001 로그인",
+              "img": "./projects/hairpin/web/001 login.png",
+              "desc": "웹 클라이언트 로그인페이지"
+            },
+            {
+              "title": "002 유저",
+              "img": "./projects/hairpin/web/002 user.png",
+              "desc": "유저 페이지 <br> 본인이 아니면 팔로우 언팔로우 버튼이 출력"
+            },
+            {
+              "title": "003 유저목록",
+              "img": "./projects/hairpin/web/003 userlist.png",
+              "desc": "유저들 리스트"
+            },
+            {
+              "title": "004 태그목록",
+              "img": "./projects/hairpin/web/004 taglist.png",
+              "desc": "태그 클라우드를 이용해 태그들을 정리 <br> 태그가 많을수록 큰 글씨"
+            },
+            {
+              "title": "005 디자인목록",
+              "img": "./projects/hairpin/web/005 designlist.png",
+              "desc": "디자인 목록"
+            },
+            {
+              "title": "006 디자인뷰",
+              "img": "./projects/hairpin/web/006 designview.png",
+              "desc": "디자인 상세보기"
+            }
+          ]
+        }
+      ],
+      "screens": [
+      ]
+    },
+    {
+      "code": "soracoin",
+      "title": "암호화폐분석 서비스개발 ( 2018. 02 ~ 2018. 03 )",
+      "img": "./projects/soracoin/003 statistics.png",
+      "desc": "한참 암호화폐에 관심이 많았던 시기에 회사동료들과의 정보공유와 투자계획수립을 위해<br> 서비스를 개발했다. VueJS를 이용하였고 데이터는 암호화된 csv 형태로 저장하였다.<br> 통계를 위해 화폐들을 클래스 인스턴스로 만들어 계산에 이용했다.",
+      "tech": [
+        "언어 : Javascript",
+        "프레임워크 : VueJS",
+        "서버 : NodeJS Express"
+      ],
+      "screens": [
+        {
+          "title": "000 로그인",
+          "img": "./projects/soracoin/000 login.png",
+          "desc": "서비스에 로그인하는 페이지"
+        },
+        {
+          "title": "001 내역",
+          "img": "./projects/soracoin/001 history.png",
+          "desc": "코인 거래 내역을 출력"
+        },
+        {
+          "title": "002 보유현황",
+          "img": "./projects/soracoin/002 having.png",
+          "desc": "코인 보유현황을 출력"
+        },
+        {
+          "title": "003 통계",
+          "img": "./projects/soracoin/003 statistics.png",
+          "desc": "코인 매수 매도 통계를 계산하여 손익을 계산하여 출력"
+        },
+        {
+          "title": "04 운영현황",
+          "img": "./projects/soracoin/004 operating.png",
+          "desc": "내 코인 운영 현황을 출력"
+        }
+      ]
+    },
+    {
+      "code": "twtalbum",
+      "title": "트위터 앨범 개발 ( 2018. 04 )",
+      "img": "./projects/twtalbum/002 album.png",
+      "desc": "트위터 API를 이용하기 위한 토이프로젝트로 시작, 앨범화하고 꾸미면서 발전했다.<br> 초기에는 파이썬을 이용했으나 사용이 익숙하지 않아 다시 NodeJS의 Request 등을 이용했다.",
+      "tech": [
+        "언어 : Javascript"
+      ],
+      "screens": [
+        {
+          "title": "001 실행프롬프트",
+          "img": "./projects/twtalbum/001 cmd.png",
+          "desc": "npm start 시 출력되는 화면<br>트위터에서 이미지들을 먼저 불러온다."
+        },
+        {
+          "title": "002 앨범",
+          "img": "./projects/twtalbum/002 album.png",
+          "desc": "앨범메인"
+        },
+        {
+          "title": "003 뷰",
+          "img": "./projects/twtalbum/003 view.png",
+          "desc": "이미지 뷰, 트위터 내용이 설명으로 추가됨"
+        },
+        {
+          "title": "004 데이터",
+          "img": "./projects/twtalbum/004 data.png",
+          "desc": "다운로드된 데이터는 일정한 규격으로 저장"
+        }
+      ]
+    },
+    {
+      "code": "automation",
+      "title": "업무 자동화 ( 2017. 08 )",
+      "img": "./projects/automation/004 diff.png",
+      "desc": "반복적이고 소모적인 업무를 쉽게 진행하기위해 시작한 프로젝트로, 기획하고 개발하였다. 개발배포와 업무 등록 업무요청 및 사내메신저 시용등 다양한 분야에 사용 가능하다.",
+      "tech": [
+        "언어 : Javascript",
+        "프레임워크 : NodeJS, Electron, Chrome확장",
+        "API : JQL(JIRA Query Lang), 사내메신저API",
+        "분석 : Fiddler 4",
+        "패키지 : NSIS"
+      ],
+      "projects": [
+        {
+          "code": "buildit",
+          "title": "빌드확인 자동화",
+          "img": "./projects/automation/004 diff.png",
+          "desc": "개발업무진행후, 실서버에 적용시 반드시 거쳐야하는 과정에서 꼭 진행해야하는 부분으로 배포예정파일을 비교 확인하고, 검수 하는 절차를 진행해야한다. <br>이를 간소화 하기위해 JQL을 분석하여 NodeJS의 request 모듈을 이용해 서버에 정보를 요청하는 부분을 구현하였고, 이를 이용해 html로 어플리케이션을 만들어 Electron으로 패키징 하였다. <br>프로그램 배포는 NSIS를 이용한 설치파일을 통하였다.",
+          "tech": [
+            "언어 : Javascript, HTML5 CSS3",
+            "프레임워크 : Electron, NodeJS",
+            "API : JQL(JIRA Query Lang)"
+          ],
+          "screens": [
+            {
+              "title": "001 설치화면",
+              "img": "./projects/automation/001 setup.png",
+              "desc": "패키지를 설치하는 화면으로 NSIS를 이용하였다."
+            },
+            {
+              "title": "002 초기화면",
+              "img": "./projects/automation/002 initial.png",
+              "desc": "프로그램 초기 실행시 화면, JIRA계정에 로그인한다."
+            },
+            {
+              "title": "003 일치",
+              "img": "./projects/automation/003 same.png",
+              "desc": "파일리스트를 확인하고 일치하는경우 아무런 변화가 없다."
+            },
+            {
+              "title": "004 불일치",
+              "img": "./projects/automation/004 diff.png",
+              "desc": "파일리스트를 확인하고 불일치파는 경우 <br>diff를 진행한다."
+            }
+          ]
+        },
+        {
+          "code": "unified",
+          "title": "통합업무도구",
+          "img": "./projects/automation/102 attatched.png",
+          "desc": "배포 요청을 간단히 할 목적으로 시작한 프로젝트로, 크롬확장형태로 제작하여 document를 직접 제어하여 이질감이 없는 확장기능으로 추가하였다. <br>빌드요청 자동화기능뿐만 아니라 분석한 사내메신저 API를 이용해 업무 요청자 담당자등에게 메신저를 보내는 등의 업무를 수행한다.",
+          "tech": [
+            "언어 : Javascript, HTML5 CSS3",
+            "프레임워크 : Chrome Extension",
+            "API : JQL(JIRA Query Lang)",
+            "분석 : Fiddler 4"
+          ],
+          "screens": [
+            {
+              "title": "101 통합업무도구",
+              "img": "./projects/automation/101 icon.png",
+              "desc": "우측상단에 확장칸에 통합업무도구확장을 추가되었고, 통합도구 메뉴를 JIRA에 삽입, 시간표보기 기능을 추가하여, 업무보고를 자동화하였다."
+            },
+            {
+              "title": "102 추가된 메신저탭",
+              "img": "./projects/automation/102 attatched.png",
+              "desc": "확장된 도구를 통해 인트라넷을 iframe으로 출력하고, 이 도메인을 활용해 사내메신저를 이용할 수 있게 되었다."
+            },
+            {
+              "title": "103 빌드요청",
+              "img": "./projects/automation/103 buildit.png",
+              "desc": "업무 진행후 번거롭게 작성해야하는 빌드 요청을 버튼화하였다."
+            },
+            {
+              "title": "104 빌드요청화면",
+              "img": "./projects/automation/104 buildit_view.png",
+              "desc": "빌드요청버튼을 누르면 빌드요청에 필요한 문구를 작성해준다."
+            }
+          ]
+        }
+      ],
+      "screens": [
+      ]
+    },
+    {
+      "code": "clickratio",
+      "title": "클릭카운터 ( 2018. 02 ~ 2018. 03 )",
+      "img": "./projects/clickratio/006 view.jpg",
+      "desc": "사이트 개편 작업 예비 조사를 위하여 메인화면 클릭 수 체크를 진행하는 모듈을 개발하였다.<br>백앤드와 공조하였으며, 데이터를 저장하는 부분만 백앤드쪽에서 맡아서 하고, 이를 모으고 가공하여 데이터로 만들고 뷰에 보여주는 부분은 직접 개발하였다. 가공에는 Bash 쉘이 사용되었다.",
+      "tech": [
+        "언어 : Javascript, ShellScript(Bash)",
+        "BackEnd : PHP7",
+        "프레임워크 : NodeJS",
+        "DB: File Log"
+      ],
+      "screens": [
+        {
+          "title": "001 쌓인 로그",
+          "img": "./projects/clickratio/001 logs.png",
+          "desc": "앱 실행 아이콘"
+        },
+        {
+          "title": "002 로그수집및가공",
+          "img": "./projects/clickratio/003 proc.png",
+          "desc": "로그를 수집하고 한대모아 sort, uniq명령으로 카운트 했다."
+        },
+        {
+          "title": "003 가공된JSON",
+          "img": "./projects/clickratio/004 sortandread.png",
+          "desc": "앞선 절차로 가공된 Log를 JSON형식으로 가공한다."
+        },
+        {
+          "title": "004 출력소스",
+          "img": "./projects/clickratio/005 action.png",
+          "desc": "가공된 JSON 데이터를 입력하고 실행하면 그 비율과 횟수가 출력되도록 하였다."
+        },
+        {
+          "title": "005 출력화면",
+          "img": "./projects/clickratio/006 view.jpg",
+          "desc": "앞선 코드를 실행하면 이와같이 비주얼라이징 된다."
+        }
+      ]
+    },
+    {
+      "code": "woorimfloor",
+      "title": "건물관리 앱 개발 ( 2018. 05 )",
+      "img": "./projects/woorimfloor/003 main.png",
+      "desc": "아버지의 요청으로 개발한 앱으로, 초기에는 그 요청이 명확하지 않아 Electron 으로 제작하고,<br> git의 원리처럼 초기파일과 그 변경사항만 저장하고 공유하는 식으로 개발했으나,<br> 모바일에 대한 요구 등의 명확한 요청으로 React Native 로 xlsx를 다루는 간단한 앱을 제작했다.",
+      "tech": [
+        "언어 : Javascript",
+        "프레임워크 : React Native, Electron",
+        "DB: Excel"
+      ],
+      "screens": [
+        {
+          "title": "001 앱",
+          "img": "./projects/woorimfloor/001 appicon.png",
+          "desc": "앱 실행 아이콘"
+        },
+        {
+          "title": "002 파일 사용법 외",
+          "img": "./projects/woorimfloor/002 manualchat.png",
+          "desc": "클라이언트 에게 사용법을 설명하고 데이터를 전송하는 대화"
+        },
+        {
+          "title": "003 메인화면",
+          "img": "./projects/woorimfloor/003 main.png",
+          "desc": "앱 실행 화면"
+        },
+        {
+          "title": "004 검색",
+          "img": "./projects/woorimfloor/004 search.png",
+          "desc": "앱 검색방법"
+        },
+        {
+          "title": "005 상세보기",
+          "img": "./projects/woorimfloor/005 detail.png",
+          "desc": "점포 클릭시 출력되는 상세페이지"
+        }
+      ]
+    },
+    {
+      "code": "devsite",
+      "title": "개발자사이트 ( 2018. 11  ~ 2019. 01 )",
+      "img": "./projects/devsite/devsite_02.png",
+      "desc": "어반베이스의 Developer 사이트를 제작하여<br />개발자들에게 SDK와 API를 사용할수있는 메뉴얼과 데모를 제공하였다.<br />Vuepress에 Markdown parser 를 추가개발하여 제작하였고, async, await Promise 등의 최신 패턴이 사용되었다.<br />https://developer.urbanbase.com",
+      "tech": [
+        "언어 : JavaScript, HTML5, CSS3",
+        "프레임워크 : NodeJS, VueJS, Vuepress",
+        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
+        "디자인협업 : zeplin.io"
+      ],
+      "screens": [
+        {
+          "title": "01 애니메이션",
+          "img": "./projects/devsite/devsite_01.png",
+          "desc": "기존 디자인된 일러스트파일을 SVG파일로 변환, 분해하여 AnimeJS를 이용해 로고 애니메이션을 작성했다."
+        },
+        {
+          "title": "02 로고",
+          "img": "./projects/devsite/devsite_02.png",
+          "desc": "완성된 로고"
+        },
+        {
+          "title": "03 메인화면슬라이드",
+          "img": "./projects/devsite/devsite_03.png",
+          "desc": "메인화면 슬라이드중 하나로 페럴렉스 스크롤을사용한다."
+        },
+        {
+          "title": "04 PRESS",
+          "img": "./projects/devsite/devsite_04.png",
+          "desc": "슬라이드된 메인 페이지중 기사목록을 실시간으로 받아와 보여준다."
+        },
+        {
+          "title": "05 API문서",
+          "img": "./projects/devsite/devsite_05.png",
+          "desc": "Markdown 을 이용한 API 문서로 마크다운 파서중 테이블 부분을 직접 개발하였다."
+        },
+        {
+          "title": "06 DEMO",
+          "img": "./projects/devsite/devsite_06.png",
+          "desc": "AutoSketch Demo의 FrontEnd를 개발하였다."
+        }
+      ]
+    },
+    {
+      "code": "arscale",
+      "title": "ARScale.io ( 2019. 01 ~ 2019. 08 )",
+      "img": "./projects/arscale/arscale_004.png",
+      "desc": "사용자가 제작한 3D모델을 웹과, 모바일, 증강현실, 가상현실로 볼수있도록 해주는 멀티 플랫폼을 런칭하였고, 그 서비스의 FrontEnd와 간단한 Viewer 모듈을 개발하였다.<br />lambda 를 이용해 서버리스 api 로 서버와 통신, 3D모델은 S3를 이용했다.<br /><br />SCSS의 도움을 받아 반응형+적응형으로 되어있다.",
+      "tech": [
+        "언어 : JavaScript, HTML5, CSS3, Unity",
+        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
+        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
+        "디자인협업 : zeplin.io"
+      ],
+      "projects": [
+        {
+          "code": "pcweb",
+          "title": "PC웹",
+          "img": "./projects/arscale/arscale_004.png",
+          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
+          "screens": [
+            {
+              "title": "001 메인",
+              "img": "./projects/arscale/arscale_001.png",
+              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
+            },
+            {
+              "title": "002 마이드라이브",
+              "img": "./projects/arscale/arscale_002.png",
+              "desc": "내 게시물(3D모델)들을 볼수있다."
+            },
+            {
+              "title": "003 상세",
+              "img": "./projects/arscale/arscale_003.png",
+              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
+            },
+            {
+              "title": "004 상세이동시",
+              "img": "./projects/arscale/arscale_004.png",
+              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
+            },
+            {
+              "title": "005 갤러리",
+              "img": "./projects/arscale/arscale_005.png",
+              "desc": "다른사람들의 게시물을 볼 수 있다."
+            },
+            {
+              "title": "006 이용가이드",
+              "img": "./projects/arscale/arscale_006.png",
+              "desc": "업로드 직전에 진행해야할 작업에 대해 설명한다."
+            },
+            {
+              "title": "007 수정및 업로드",
+              "img": "./projects/arscale/arscale_007.png",
+              "desc": "업로드시 프로퍼티를 설정한다."
+            }
+          ]
+        },
+        {
+          "code": "mobile",
+          "title": "모바일",
+          "img": "./projects/arscale/arscale_mob_000.png",
+          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
+          "screens": [
+            {
+              "title": "000 메인페이지",
+              "img": "./projects/arscale/arscale_mob_000.png",
+              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
+            },
+            {
+              "title": "001 마이드라이브",
+              "img": "./projects/arscale/arscale_mob_001.png",
+              "desc": "내 게시물(3D모델)들을 볼수있다."
+            },
+            {
+              "title": "002 상세",
+              "img": "./projects/arscale/arscale_mob_002.png",
+              "desc": "모바일에서는 3D모델의 스틸컷 이미지를 보여준다."
+            },
+            {
+              "title": "003 내상태정보및메뉴",
+              "img": "./projects/arscale/arscale_mob_003.png",
+              "desc": "전체메뉴와 내 상태를 보여준다."
+            },
+            {
+              "title": "004 갤러리",
+              "img": "./projects/arscale/arscale_mob_004.png",
+              "desc": "다른사람들의 게시물을 볼 수 있다."
+            },
+            {
+              "title": "005 로그인",
+              "img": "./projects/arscale/arscale_mob_005.png",
+              "desc": "로그인 페이지, SNS로그인을 비롯한 작업들이 되어있다."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
