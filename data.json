@@ -762,6 +762,32 @@
       "screens": []
     },
     {
+      "code": "itemflyer",
+      "title": "아이템플라이어 게임아이템 거래소 ( 2020. 05 ~ 2021. 10 )",
+      "img": "./projects/arscale/arscale_004.png",
+      "desc": "준비중",
+      "tech": [
+        "언어 : JavaScript, HTML5, CSS3, Unity",
+        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
+        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
+        "디자인협업 : zeplin.io"
+      ],
+      "screens": []
+    },
+    {
+      "code": "skadimall",
+      "title": "Skadimall 한-일 구매대행 서비스 ( 2021. 07 ~ 2022. 04 )",
+      "img": "./projects/arscale/arscale_004.png",
+      "desc": "준비중",
+      "tech": [
+        "언어 : JavaScript, HTML5, CSS3, Unity",
+        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
+        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
+        "디자인협업 : zeplin.io"
+      ],
+      "screens": []
+    },
+    {
       "code": "setaws",
       "title": "AWS Tools ( 2019. 01 ~ 2019. 08 )",
       "img": "./projects/setaws/setaws_001.png",
