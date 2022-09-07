@@ -982,7 +982,7 @@
     {
       "code": "kt",
       "title": "KT통화비서 ( 2022. 05 ~ 2022. 08 )",
-      "img": "./projects/arscale/arscale_004.png",
+      "img": "./projects/kt/kt_1.jpeg",
       "desc": "KT 통화비서 앱의 대규모 리뉴얼로, 테이블 매니저의 예약 서비스를 전략적으로 연동 서비스하게 되었습니다. SI와는 다르게, 서비스의 핵심만을 요약하여, KT 측에 API 형태로 제공하고, 클라이언트 서비스를 개발해 웹 뷰 형태로 제공했습니다.<br/>네이티브 앱과 웹뷰 사이의 통신에 대해도 방식을 직접 제안하여 적용되었습니다. 해당 개발은 Typescript 기반 React와 Zustand로 상태관리, react-query로 통신, 을 구현했습니다.<br/>통신 시 보안을 위해 키를 이용한 암호화를 진행하였고, 디버깅을 방지하기 위한 여러 가지 연구로 소스 보안에도 신경 썼습니다.<br/>다음에 이 서비스를 기반으로 다시 회사 서비스를 개편할 수 있도록 코드 및 성능 최적화에 초점을 맞추었습니다.<br/><br/>AppStore/PlayStore ->KT 통화비서->예약관리",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3, Unity",
@@ -990,20 +990,112 @@
         "서버 : AWS (S3, Cloudfront)",
         "디자인협업 : Figma"
       ],
-      "screens": []
+      "screens": [
+        {
+          "title": "001 앱 메인",
+          "img": "./projects/kt/kt_1.jpeg",
+          "desc": "예약관리 메뉴가 테이블매니저 영역"
+        },
+        {
+          "title": "002 사용동의",
+          "img": "./projects/kt/kt_2.jpeg",
+          "desc": "사용동의를 하면 테이블매니저측과 연동됨"
+        },
+        {
+          "title": "003 튜토리얼 (일정 1)",
+          "img": "./projects/kt/kt_3.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "004 튜토리얼 (일정 2)",
+          "img": "./projects/kt/kt_4.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "005 튜토리얼 (일정 3)",
+          "img": "./projects/kt/kt_5.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "006 튜토리얼 (일정 4)",
+          "img": "./projects/kt/kt_6.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "007 예약설정",
+          "img": "./projects/kt/kt_7.jpeg",
+          "desc": "웹뷰로 구현된 예약설정 페이지"
+        },
+        {
+          "title": "008 매장 기본정보",
+          "img": "./projects/kt/kt_8.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "009 예약받는시간설정",
+          "img": "./projects/kt/kt_9.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "010 테이블별 예약설정",
+          "img": "./projects/kt/kt_10.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "011 일별 일정관리",
+          "img": "./projects/kt/kt_11.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "012 예약현황목록",
+          "img": "./projects/kt/kt_12.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "013 예약내역 간단보기",
+          "img": "./projects/kt/kt_13.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "014 예약생성 (날짜선택)",
+          "img": "./projects/kt/kt_14.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "015 얘약 상세",
+          "img": "./projects/kt/kt_15.jpeg",
+          "desc": ""
+        },
+        {
+          "title": "016 캘린더 선택",
+          "img": "./projects/kt/kt_16.jpeg",
+          "desc": ""
+        }
+      ]
     },
 
     {
       "code": "setaws",
-      "title": "AWS Tools ( 2019. 01 ~ 2019. 08 )",
+      "title": "AWS Tools ( 2019. 01 ~  )",
       "img": "./projects/setaws/setaws_001.png",
-      "desc": "준비중",
+      "desc": "프론트엔드 개발을 하면서제일 귀찮은 작업중 하나는 배포일것입니다. aws 환경을 이용하면서 한개의 계정만 사용한다면 문제가 없겠지만, 여러개의 계정을 사용한다면 기본적인 cli 기능으로는 절차가 복잡해집니다. 거기에 MFA까지 사용한다면 배포하면서 피로해질것입니다.\n그래서 제일 먼저 작업했던것이 프로필스위쳐 였습니다. 프로필간 변경을 파라미터 몇개로 자동화했습니다.\n그 후 프론트 개발의 대부분이 빌드후 정적호스팅과 cloudfront invalidation 작업이 필요했기때문에 이 작업들도  자동화했습니다. ",
       "tech": [
         "언어 : Bash",
         "모듈 : AWS CLI",
-        "사용서비스 : AWS (STS, S3)"
+        "사용서비스 : AWS (STS, S3, Cloudfront and more)"
       ],
-      "screens": []
+      "screens": [
+        {
+          "title": "setaws(프로필스위쳐)",
+          "img": "./projects/setaws/setaws_01.png",
+          "desc": "프로필을 바꾸고 mfa 토큰을 세팅한다."
+        },
+        {
+          "title": "cfdist (cloudfront 기본동작 자동화)",
+          "img": "./projects/setaws/setaws_01.png",
+          "desc": "cloudfront 배포를 찾아 쉽게 invalidation을 진행"
+        }
+      ]
     }
   ]
 }

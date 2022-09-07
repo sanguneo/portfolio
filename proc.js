@@ -113,7 +113,7 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
             `,`${parent && parent.code ? parent.code + '_' : ''}${project.code}`));
         }
     }
-    portfolio.projects.forEach(mapBulk);
+    portfolio.projects.reverse().forEach(mapBulk);
     document.querySelectorAll('.pageIndicator').forEach(function(e){
         e.innerHTML += ' / ' + pageNum;
     })
