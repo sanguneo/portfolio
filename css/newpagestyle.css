@@ -182,6 +182,8 @@ img.inimg {
     justify-content: space-between;
     align-content: space-around;
     flex-flow: row wrap;
+    overflow:overlay;
+    overflow:auto;
 }
 .screen {
     width: 144px;
