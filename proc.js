@@ -2,6 +2,8 @@ try{
 fetch('./data.json').then(response => response.json()).then(function _init(data) {
     let portfolio = data;
 
+    portfolio.projects = portfolio.projects.reverse();
+
     const periodRegExp = /\(\ .{0,50} \)/g;
 
     let pageNum = 0;
@@ -113,7 +115,7 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
             `,`${parent && parent.code ? parent.code + '_' : ''}${project.code}`));
         }
     }
-    portfolio.projects.reverse().forEach(mapBulk);
+    portfolio.projects.forEach(mapBulk);
     document.querySelectorAll('.pageIndicator').forEach(function(e){
         e.innerHTML += ' / ' + pageNum;
     })
