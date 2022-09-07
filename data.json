@@ -959,48 +959,23 @@
     {
       "code": "theyeyak",
       "title": "더 예약 코드리뉴얼 ( 2022. 04 ~ 2022. 09 )",
-      "img": "./projects/theyeyak/arscale_004.png",
-      "desc": "B2C 서비스인 더 예약사이트의 기능추가와 동시에, 성능 최적화를 위한 코드 리뉴얼을 진행했습니다. 기존 CRA로 시작된 파편화된 프로젝트에서 NextJS를 사용해 SSR을 이용했고 중첩된 Context를 Zustand 상태관리 라이브러리로 분리하고, react-query를 이용해 API 통신을 진행하여 에러를 핸들링하였고 이 기술들을 적절히 분리하고 조합하여 rendering과 통신을 최적화할 수 있었습니다. 거기에 hook-form을 이용해 직관적이고 합리적인 유효성 검사를 적용하였습니다.<br/>이에 더해 리소스 로드 성능을 늘이고, 서버부하를 줄여 사용자에게 안정적으로 서비스 하기위해 AWS Lambda@Edge를 이용해 리소스 최적화를 진행했습니다.<br/>이 코드 리뉴얼 작업을 통해 서버 부담을 줄이고 사용자에게 쾌적한 환경을 제공하게 되었습니다.",
+      "img": "./projects/theyeyak/theyeyak_001.png",
+      "desc": "B2C 서비스인 더 예약사이트의 기능추가와 동시에, 성능 최적화를 위한 코드 리뉴얼을 진행했습니다. 기존 CRA로 시작된 파편화된 프로젝트에서 NextJS를 사용해 SSR을 이용했고 중첩된 Context를 Zustand 상태관리 라이브러리로 분리하고, react-query를 이용해 API 통신을 진행하여 에러를 핸들링하였고 이 기술들을 적절히 분리하고 조합하여 rendering과 통신을 최적화할 수 있었습니다. 거기에 hook-form을 이용해 직관적이고 합리적인 유효성 검사를 적용하였습니다.<br/>이에 더해 리소스 로드 성능을 늘이고, 서버부하를 줄여 사용자에게 안정적으로 서비스 하기위해 AWS Lambda@Edge를 이용해 리소스 최적화를 진행했습니다.<br/>이 코드 리뉴얼 작업을 통해 서버 부담을 줄이고 사용자에게 쾌적한 환경을 제공하게 되었습니다.<br/><br/>리뉴얼전) 27.1mb, finish 14.6s, domcontentloaded: 1.37s, load: 4.24s<br/>리뉴얼후) 7.8mb, finish 6.1, domcontentloaded: 0.2s, load: 349ms",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3",
-        "프레임워크&모듈 : NodeJS, ReactJS, NextJS(SSR), react-query, hook-form, zustand(상태관리), emotion(styled component)",
+        "프레임워크&모듈 : ReactJS, NextJS(SSR), react-query, hook-form, zustand(상태관리), emotion(styled component)",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront)"
       ],
       "screens": [
         {
-          "title": "001 메인",
-          "img": "./projects/arscale/arscale_001.png",
-          "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
+          "title": "001 예약상품권",
+          "img": "./projects/theyeyak/theyeyak_001.png",
+          "desc": ""
         },
         {
-          "title": "002 마이드라이브",
-          "img": "./projects/arscale/arscale_002.png",
-          "desc": "내 게시물(3D모델)들을 볼수있다."
-        },
-        {
-          "title": "003 상세",
-          "img": "./projects/arscale/arscale_003.png",
-          "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-        },
-        {
-          "title": "004 상세이동시",
-          "img": "./projects/arscale/arscale_004.png",
-          "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-        },
-        {
-          "title": "005 갤러리",
-          "img": "./projects/arscale/arscale_005.png",
-          "desc": "다른사람들의 게시물을 볼 수 있다."
-        },
-        {
-          "title": "006 이용가이드",
-          "img": "./projects/arscale/arscale_006.png",
-          "desc": "업로드 직전에 진행해야할 작업에 대해 설명한다."
-        },
-        {
-          "title": "007 수정및 업로드",
-          "img": "./projects/arscale/arscale_007.png",
-          "desc": "업로드시 프로퍼티를 설정한다."
+          "title": "002 예약",
+          "img": "./projects/theyeyak/theyeyak_002.png",
+          "desc": ""
         }
       ]
     },
