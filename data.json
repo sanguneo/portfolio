@@ -802,16 +802,42 @@
     },
     {
       "code": "itemflyer",
-      "title": "아이템플라이어 게임아이템 거래소 ( 2020. 05 ~ 2021. 10 )",
-      "img": "./projects/itemflyer/arscale_004.png",
-      "desc": "암호화폐 기반 ",
+      "title": "아이템플라이어 게임아이템 거래소 ( 2020. 05 ~ 2021. 10, 개발중단 후 투자대기중)",
+      "img": "./projects/itemflyer/itemflyer_001.png",
+      "desc": "암호화폐 기반 게임아이템 거래소 서비스로 개발되었으며, 해당 프로젝트에서는 NodeJS 를 이용해 JWT 구현을 직접 진행했고, 외부 모듈을 사용하지않고 다날과 직접 컨택해 본인인증과, 가상계좌 기능을 사용할 수 있도록 api를 구성했다.",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3",
-        "프레임워크&모듈 : NodeJS, VueJS, Nuxt (With SSR), Vuex, JWT, ",
+        "프레임워크&모듈 : NodeJS, VueJS, Nuxt (With SSR), Vuex, JWT",
         "서버 : AWS (EC2)",
         "디자인협업 : zeplin.io"
       ],
-      "screens": []
+      "screens": [
+        {
+          "title": "001 메인",
+          "img": "./projects/itemflyer/itemflyer_001.png",
+          "desc": "실시간으로 거래중인 아이템을 보여주도록 심플하게 구성되었다"
+        },
+        {
+          "title": "002 검색",
+          "img": "./projects/itemflyer/itemflyer_002.png",
+          "desc": "json기반 파일을 검색하도록 작업했다"
+        },
+        {
+          "title": "003 마이페이지",
+          "img": "./projects/itemflyer/itemflyer_003.png",
+          "desc": "내 거래 및 등급 상태를 확인할 수 있다."
+        },
+        {
+          "title": "004 나의 마일리지",
+          "img": "./projects/itemflyer/itemflyer_001.png",
+          "desc": "내 마일리지 현황과 히스토리를 확인할 수 있다."
+        },
+        {
+          "title": "005 ",
+          "img": "./projects/itemflyer/itemflyer_001.png",
+          "desc": "판매물품 상세정보를 확인 할 수 있다."
+        }
+      ]
     },
     {
       "code": "skadimall",
