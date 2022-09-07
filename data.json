@@ -725,51 +725,90 @@
     {
       "code": "studiob2b",
       "title": "Studio B2B ( 2019. 12 ~ 2022. 01 )",
-      "img": "./projects/arscale/arscale_004.png",
-      "desc": "준비중",
+      "img": "./projects/studiob2b/studiob2b_01.png",
+      "desc": "사용자들은 각자의 집을 검색해 미리 가구를 놓아보고 인테리어를 해볼 수 있고, 없는 도면은 직접 그려 가상의 공간을 꾸며볼 수 있습니다. 또한 3D 모델을 업로드할 수 있는데, 3d 파일들을 분석하고 구현하여 이 모델의 상세한 설정을 할 수 있게 되었고, 이를 기반으로 사내 AR 애플리케이션에서도 해당 3D 모델을 확인할 수 있게 되었습니다.<br/>이 프로젝트들은 기존 React 기반의 프로젝트에서 Vue(Nuxt) 기반으로 변경되었고, I18N을 이용해 다국어 처리도 함께 진행하면서 방식과 전략에 대해 깊이 있게 고민할 수 있었습니다.<br/>웹상에서는 한 개의 소스지만, 도메인 기반으로 각 비즈니스 업체 서비스로 분리됩니다. 기능상으로 큰 차이는 없지만, B2B 서비스에서는 도면 인테리어 상담 모델 업로드가 가능하고, 최근에는 이 가상공간을 초고화질로 렌더링하여 실제의 모습은 어떻게 보이게 되는지 사진처럼 볼 수 있도록 만들어졌습니다.<br/>B2B 서비스는 국내외 구분 없이 영역을 확장할 수 있도록 하였고, 각 채널의 고유한 영역에서 커스터마이징된 서비스를 제공할 수 있습니다.<br/>해당 프로젝트에서는 AWS 서버 세팅과 이동에 대한 설정을 대부분 직접 작업하였습니다.<br/><br/>https://contt.studio.urbanbase.com/",
       "tech": [
-        "언어 : JavaScript, HTML5, CSS3, Axios, Unity",
-        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
+        "언어 : JavaScript, HTML5, CSS3",
+        "프레임워크&모듈 : NodeJS, VueJS, NuxtJS, Vuex, i18N, Axios, Unity3D",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
         "디자인협업 : Figma"
       ],
-      "screens": []
+      "screens": [
+        {
+          "title": "001 메인",
+          "img": "./projects/studiob2b/studiob2b_01.png",
+          "desc": "스튜디오 메인"
+        },
+        {
+          "title": "002 홈스타일링 목록",
+          "img": "./projects/studiob2b/studiob2b_02.png",
+          "desc": "홈스타일링 목록을 가져온다, 도면도 같은UI로 보여진다"
+        },
+        {
+          "title": "003 공지사항",
+          "img": "./projects/studiob2b/studiob2b_03.png",
+          "desc": "공지사항을 보여준다."
+        },
+        {
+          "title": "004 실제 홈스타일링 ui",
+          "img": "./projects/studiob2b/studiob2b_04.png",
+          "desc": "홈 스타일링하고 조명을 추가해 초고화질 화면을 찍을 수 있다."
+        },
+        {
+          "title": "005 라이브스케치",
+          "img": "./projects/studiob2b/studiob2b_05.png",
+          "desc": "Unity로 개발된 도면그리기 프로그램을 WebGL라이브러리로 감까 모듈로 만들었다."
+        },
+        {
+          "title": "006 IP접근 제한",
+          "img": "./projects/studiob2b/studiob2b_06.png",
+          "desc": "B2B서비스는 권한외 사용자를 제한할 수 있다."
+        }
+      ]
     },
     {
       "code": "studiob2c",
-      "title": "Studio B2C ( 2019. 12 ~ 2022. 01 )",
-      "img": "./projects/arscale/arscale_004.png",
-      "desc": "준비중",
+      "title": "Studio B2C ( 2019. 08 ~ 2021. 10 )",
+      "img": "./projects/studiob2c/studiob2c_001.png",
+      "desc": " 3D 가상인테리어 플랫폼을 넘어 실제의 인테리어와도 연결되도록 하기 위해, B2C 형태의 서비스를 개발했습니다. 국내에서 수집하고 직접 그려진 10만 개 이상의 도면과 국내외 업체와의 협업으로 모델링 된 1만 4천 개 이상의 3d 모델들을 통해 내가 사는 혹은 앞으로 살 집의 구조를 직접 경험하고 꾸며볼 수 있게 되었습니다. 그리고 이 데이터를 토대로 인테리어 상담을 신청할 수도 있도록 연결했습니다.<br/>이것의 개발과 함께 한국/일본의 지리정보테이터를 활용해 행정구역 표시를 형태에 맞게 변환해주는 프로그램을 제작했고, 도면 찾기 서비스 내 지도의 행정 구역표시에 사용되고 있습니다.<br/><br/>https://urbanbase.com/",
       "tech": [
-        "언어 : JavaScript, HTML5, CSS3, Axios, Unity",
-        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
+        "언어 : JavaScript, HTML5, CSS3",
+        "프레임워크&모듈 : NodeJS, VueJS, NuxtJS, Vuex, Axios, Unity3D",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
         "디자인협업 : Figma"
       ],
-      "screens": []
-    },
-    {
-      "code": "kt",
-      "title": "KT통화비서 ( 2019. 01 ~ 2019. 08 )",
-      "img": "./projects/arscale/arscale_004.png",
-      "desc": "준비중",
-      "tech": [
-        "언어 : JavaScript, HTML5, CSS3, Unity",
-        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
-        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
-        "디자인협업 : zeplin.io"
-      ],
-      "screens": []
+      "screens": [
+        {
+          "title": "001 메인",
+          "img": "./projects/studiob2c/studiob2c_001.png",
+          "desc": "서비스 메인, 사용자들이 꾸민 스타일링을 확인할 수 있다."
+        },
+        {
+          "title": "002 스타일링 미리보기",
+          "img": "./projects/studiob2c/studiob2c_002.png",
+          "desc": "사용자가 꾸민 집을 보고, 인테리어 정보를 얻을 수 있고, 소통할 수 있다."
+        },
+        {
+          "title": "003 스타일링",
+          "img": "./projects/studiob2c/studiob2c_003.png",
+          "desc": "직접 집을 꾸며볼 수 있다."
+        },
+        {
+          "title": "004 내집찾아 꾸미기",
+          "img": "./projects/studiob2c/studiob2c_005.png",
+          "desc": "지도내에서 내가 원하는 집을 찾아 꾸밀 수 있다."
+        }
+      ]
     },
     {
       "code": "itemflyer",
       "title": "아이템플라이어 게임아이템 거래소 ( 2020. 05 ~ 2021. 10 )",
-      "img": "./projects/arscale/arscale_004.png",
-      "desc": "준비중",
+      "img": "./projects/itemflyer/arscale_004.png",
+      "desc": "암호화폐 기반 ",
       "tech": [
-        "언어 : JavaScript, HTML5, CSS3, Unity",
-        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
-        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
+        "언어 : JavaScript, HTML5, CSS3",
+        "프레임워크&모듈 : NodeJS, VueJS, Nuxt (With SSR), Vuex, JWT, ",
+        "서버 : AWS (EC2)",
         "디자인협업 : zeplin.io"
       ],
       "screens": []
@@ -780,13 +819,75 @@
       "img": "./projects/arscale/arscale_004.png",
       "desc": "준비중",
       "tech": [
-        "언어 : JavaScript, HTML5, CSS3, Unity",
+        "언어 : JavaScript, HTML5, CSS3",
         "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
-        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
-        "디자인협업 : zeplin.io"
+        "서버 : AWS (S3, EC2, Cloudfront)",
+        "디자인협업 : Figma"
       ],
       "screens": []
     },
+    {
+      "code": "theyeyak",
+      "title": "더 예약 코드리뉴얼 ( 2022. 04 ~ 2022. 09 )",
+      "img": "./projects/theyeyak/arscale_004.png",
+      "desc": "B2C 서비스인 더 예약사이트의 기능추가와 동시에, 성능 최적화를 위한 코드 리뉴얼을 진행했습니다. 기존 CRA로 시작된 파편화된 프로젝트에서 NextJS를 사용해 SSR을 이용했고 중첩된 Context를 Zustand 상태관리 라이브러리로 분리하고, react-query를 이용해 API 통신을 진행하여 에러를 핸들링하였고 이 기술들을 적절히 분리하고 조합하여 rendering과 통신을 최적화할 수 있었습니다. 거기에 hook-form을 이용해 직관적이고 합리적인 유효성 검사를 적용하였습니다.<br/>이에 더해 리소스 로드 성능을 늘이고, 서버부하를 줄여 사용자에게 안정적으로 서비스 하기위해 AWS Lambda@Edge를 이용해 리소스 최적화를 진행했습니다.<br/>이 코드 리뉴얼 작업을 통해 서버 부담을 줄이고 사용자에게 쾌적한 환경을 제공하게 되었습니다.",
+      "tech": [
+        "언어 : TypeScript, HTML5, CSS3",
+        "프레임워크&모듈 : NodeJS, ReactJS, NextJS(SSR), react-query, hook-form, zustand(상태관리), emotion(styled component)",
+        "서버 : AWS (S3, EC2, Lambda, Cloudfront)"
+      ],
+      "screens": [
+        {
+          "title": "001 메인",
+          "img": "./projects/arscale/arscale_001.png",
+          "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
+        },
+        {
+          "title": "002 마이드라이브",
+          "img": "./projects/arscale/arscale_002.png",
+          "desc": "내 게시물(3D모델)들을 볼수있다."
+        },
+        {
+          "title": "003 상세",
+          "img": "./projects/arscale/arscale_003.png",
+          "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
+        },
+        {
+          "title": "004 상세이동시",
+          "img": "./projects/arscale/arscale_004.png",
+          "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
+        },
+        {
+          "title": "005 갤러리",
+          "img": "./projects/arscale/arscale_005.png",
+          "desc": "다른사람들의 게시물을 볼 수 있다."
+        },
+        {
+          "title": "006 이용가이드",
+          "img": "./projects/arscale/arscale_006.png",
+          "desc": "업로드 직전에 진행해야할 작업에 대해 설명한다."
+        },
+        {
+          "title": "007 수정및 업로드",
+          "img": "./projects/arscale/arscale_007.png",
+          "desc": "업로드시 프로퍼티를 설정한다."
+        }
+      ]
+    },
+    {
+      "code": "kt",
+      "title": "KT통화비서 ( 2022. 05 ~ 2022. 08 )",
+      "img": "./projects/arscale/arscale_004.png",
+      "desc": "KT 통화비서 앱의 대규모 리뉴얼로, 테이블 매니저의 예약 서비스를 전략적으로 연동 서비스하게 되었습니다. SI와는 다르게, 서비스의 핵심만을 요약하여, KT 측에 API 형태로 제공하고, 클라이언트 서비스를 개발해 웹 뷰 형태로 제공했습니다.<br/>네이티브 앱과 웹뷰 사이의 통신에 대해도 방식을 직접 제안하여 적용되었습니다. 해당 개발은 Typescript 기반 React와 Zustand로 상태관리, react-query로 통신, 을 구현했습니다.<br/>통신 시 보안을 위해 키를 이용한 암호화를 진행하였고, 디버깅을 방지하기 위한 여러 가지 연구로 소스 보안에도 신경 썼습니다.<br/>다음에 이 서비스를 기반으로 다시 회사 서비스를 개편할 수 있도록 코드 및 성능 최적화에 초점을 맞추었습니다.<br/><br/>AppStore/PlayStore ->KT 통화비서->예약관리",
+      "tech": [
+        "언어 : TypeScript, HTML5, CSS3, Unity",
+        "프레임워크&모듈 : ReactJS, Axios, react-query, hook-form, zustand(recoil), cryptoJS",
+        "서버 : AWS (S3, Cloudfront)",
+        "디자인협업 : Figma"
+      ],
+      "screens": []
+    },
+
     {
       "code": "setaws",
       "title": "AWS Tools ( 2019. 01 ~ 2019. 08 )",
