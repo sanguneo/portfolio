@@ -804,7 +804,7 @@
       "code": "itemflyer",
       "title": "아이템플라이어 게임아이템 거래소 ( 2020. 05 ~ 2021. 10, 개발중단 후 투자대기중)",
       "img": "./projects/itemflyer/itemflyer_001.png",
-      "desc": "암호화폐 기반 게임아이템 거래소 서비스로 개발되었으며, 해당 프로젝트에서는 NodeJS 를 이용해 JWT 구현을 직접 진행했고, 외부 모듈을 사용하지않고 다날과 직접 컨택해 본인인증과, 가상계좌 기능을 사용할 수 있도록 api를 구성했다.",
+      "desc": "암호화폐 기반 게임아이템 거래소 서비스로 개발한 사이드 프로젝트로, 해당 프로젝트에서는 NodeJS 를 이용해 JWT 구현을 직접 진행했고, 외부 모듈을 사용하지않고 다날과 직접 컨택해 본인인증과, 가상계좌 기능을 사용할 수 있도록 api를 구성했다.",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3",
         "프레임워크&모듈 : NodeJS, VueJS, Nuxt (With SSR), Vuex, JWT",
@@ -842,15 +842,119 @@
     {
       "code": "skadimall",
       "title": "Skadimall 한-일 구매대행 서비스 ( 2021. 07 ~ 2022. 04 )",
-      "img": "./projects/arscale/arscale_004.png",
-      "desc": "준비중",
+      "img": "./projects/skadimall/skadimall_2.png",
+      "desc": "한류열풍에 힘입어 일본내에서 한국물건의 수요가 커짐에따라 시작된 사이드 프로젝트입니다.<br/>자체 물품 외, 쿠팡/네이버쇼핑의 물건을 구매대행합니다.(크롤러 사용)<br/>기본적으로 한/일 언어를 지원하고, 일본내 결제서비스들을 이용하였습니다.",
       "tech": [
-        "언어 : JavaScript, HTML5, CSS3",
+        "언어 : JavaScript, HTML5, CSS3(반응형)",
         "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
         "서버 : AWS (S3, EC2, Cloudfront)",
         "디자인협업 : Figma"
       ],
-      "screens": []
+      "screens": [
+        {
+          "title": "001 메인 ",
+          "img": "./projects/skadimall/skadimall_2.png",
+          "desc": ""
+        },
+        {
+          "title": "002 메인(모바일)",
+          "img": "./projects/skadimall/skadimall_3.png",
+          "desc": ""
+        },
+        {
+          "title": "003 로그인",
+          "img": "./projects/skadimall/skadimall_4.png",
+          "desc": ""
+        },
+        {
+          "title": "004 로그인(모바일)",
+          "img": "./projects/skadimall/skadimall_5.png",
+          "desc": ""
+        },
+        {
+          "title": "005 마이페이지",
+          "img": "./projects/skadimall/skadimall_6.png",
+          "desc": "내 구매 현황및 포인트 확인"
+        },
+        {
+          "title": "006 마이페이지(모바일)",
+          "img": "./projects/skadimall/skadimall_7.png",
+          "desc": ""
+        },
+        {
+          "title": "007 마이리뷰",
+          "img": "./projects/skadimall/skadimall_8.png",
+          "desc": ""
+        },
+        {
+          "title": "008 마이리뷰(모바일)",
+          "img": "./projects/skadimall/skadimall_8_5.png",
+          "desc": ""
+        },{
+          "title": "009 주문목록 조회",
+          "img": "./projects/skadimall/skadimall_9.png",
+          "desc": ""
+        },
+        {
+          "title": "010 주문목록 조회(모바일)",
+          "img": "./projects/skadimall/skadimall_10.png",
+          "desc": ""
+        },
+        {
+          "title": "011 장바구니",
+          "img": "./projects/skadimall/skadimall_11.png",
+          "desc": ""
+        },
+        {
+          "title": "012 장바구니(모바일)",
+          "img": "./projects/skadimall/skadimall_12.png",
+          "desc": ""
+        },
+        {
+          "title": "013 결제",
+          "img": "./projects/skadimall/skadimall_13.png",
+          "desc": ""
+        },
+        {
+          "title": "014 결제(모바일)",
+          "img": "./projects/skadimall/skadimall_13_5.png",
+          "desc": ""
+        },{
+          "title": "015 검색 컴포넌트",
+          "img": "./projects/skadimall/skadimall_14.png",
+          "desc": ""
+        },
+        {
+          "title": "016 검색 컴포넌트(모바일)",
+          "img": "./projects/skadimall/skadimall_15.png",
+          "desc": ""
+        },
+        {
+          "title": "017 모바일 GNB",
+          "img": "./projects/skadimall/skadimall_16.png",
+          "desc": ""
+        },
+        {
+          "title": "018 상품 상세",
+          "img": "./projects/skadimall/skadimall_17.png",
+          "desc": ""
+        },
+        {
+          "title": "019 상품 상세(모바일)",
+          "img": "./projects/skadimall/skadimall_18.png",
+          "desc": ""
+        },
+        {
+          "title": "020 카테고리 선택",
+          "img": "./projects/skadimall/skadimall_19.png",
+          "desc": ""
+        },
+        {
+          "title": "021 카테고리 선택 모바일 ",
+          "img": "./projects/skadimall/skadimall_20.png",
+          "desc": ""
+        }
+      ]
     },
     {
       "code": "theyeyak",
