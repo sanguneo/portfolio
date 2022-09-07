@@ -1,6 +1,6 @@
 {
   "title": "PORTFOLIO",
-  "subtitle": "2019 나상권<br><span>sknah0319@gmail.com<br>http://portfolio.sanguneo.com/</span>",
+  "subtitle": "2022 나상권<br><span>sknah0319@gmail.com<br>https://portfolio.sanguneo.com/</span>",
   "desc": "그동안 공부하고 개발해온 작업들을 모아두었습니다.<br> 이미지를 클릭하면, 확대된 이미지와, 그 이미지에 대한 설명을 볼 수 있습니다.<br>히스토리 <strong>인쇄시에는</strong> 히스토리가 가로방향으로, 현재설명은 제외하고 인쇄됩니다.<br>히스토리는 2019년 이전의 내용입니다.<br><span>인쇄시 배경그래픽 인쇄를 반드시 체크해주세요.</span>",
   "history": "./history.png",
   "projects": [
@@ -643,7 +643,7 @@
           "code": "pcweb",
           "title": "PC웹",
           "img": "./projects/arscale/arscale_004.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
+          "desc": "Unity 3D뷰어를 이용해 Canvas 에서 3D 모델을 보여준다",
           "screens": [
             {
               "title": "001 메인",
@@ -701,102 +701,7 @@
             {
               "title": "002 상세",
               "img": "./projects/arscale/arscale_mob_002.png",
-              "desc": "모바일에서는 3D모델의 스틸컷 이미지를 보여준다."
-            },
-            {
-              "title": "003 내상태정보및메뉴",
-              "img": "./projects/arscale/arscale_mob_003.png",
-              "desc": "전체메뉴와 내 상태를 보여준다."
-            },
-            {
-              "title": "004 갤러리",
-              "img": "./projects/arscale/arscale_mob_004.png",
-              "desc": "다른사람들의 게시물을 볼 수 있다."
-            },
-            {
-              "title": "005 로그인",
-              "img": "./projects/arscale/arscale_mob_005.png",
-              "desc": "로그인 페이지, SNS로그인을 비롯한 작업들이 되어있다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "code": "studiob2c",
-      "title": "ARScale.io ( 2019. 01 ~ 2019. 08 )",
-      "img": "./projects/arscale/arscale_004.png",
-      "desc": "사용자가 제작한 3D모델을 웹과, 모바일, 증강현실, 가상현실로 볼수있도록 해주는 멀티 플랫폼을 런칭하였고, 그 서비스의 FrontEnd와 간단한 Viewer 모듈을 개발하였다.<br />lambda 를 이용해 서버리스 api 로 서버와 통신, 3D모델은 S3를 이용했다.<br /><br />SCSS의 도움을 받아 반응형+적응형으로 되어있다.",
-      "tech": [
-        "언어 : JavaScript, HTML5, CSS3, Unity",
-        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
-        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
-        "디자인협업 : zeplin.io"
-      ],
-      "projects": [
-        {
-          "code": "pcweb",
-          "title": "PC웹",
-          "img": "./projects/arscale/arscale_004.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
-          "screens": [
-            {
-              "title": "001 메인",
-              "img": "./projects/arscale/arscale_001.png",
-              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
-            },
-            {
-              "title": "002 마이드라이브",
-              "img": "./projects/arscale/arscale_002.png",
-              "desc": "내 게시물(3D모델)들을 볼수있다."
-            },
-            {
-              "title": "003 상세",
-              "img": "./projects/arscale/arscale_003.png",
-              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-            },
-            {
-              "title": "004 상세이동시",
-              "img": "./projects/arscale/arscale_004.png",
-              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-            },
-            {
-              "title": "005 갤러리",
-              "img": "./projects/arscale/arscale_005.png",
-              "desc": "다른사람들의 게시물을 볼 수 있다."
-            },
-            {
-              "title": "006 이용가이드",
-              "img": "./projects/arscale/arscale_006.png",
-              "desc": "업로드 직전에 진행해야할 작업에 대해 설명한다."
-            },
-            {
-              "title": "007 수정및 업로드",
-              "img": "./projects/arscale/arscale_007.png",
-              "desc": "업로드시 프로퍼티를 설정한다."
-            }
-          ]
-        },
-        {
-          "code": "mobile",
-          "title": "모바일",
-          "img": "./projects/arscale/arscale_mob_000.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
-          "screens": [
-            {
-              "title": "000 메인페이지",
-              "img": "./projects/arscale/arscale_mob_000.png",
-              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
-            },
-            {
-              "title": "001 마이드라이브",
-              "img": "./projects/arscale/arscale_mob_001.png",
-              "desc": "내 게시물(3D모델)들을 볼수있다."
-            },
-            {
-              "title": "002 상세",
-              "img": "./projects/arscale/arscale_mob_002.png",
-              "desc": "모바일에서는 3D모델의 스틸컷 이미지를 보여준다."
+              "desc": "모바일에서는 성능상의 이슈로 WebGL eotls 3D모델의 스틸컷 이미지를 보여준다."
             },
             {
               "title": "003 내상태정보및메뉴",
@@ -819,288 +724,55 @@
     },
     {
       "code": "studiob2b",
-      "title": "ARScale.io ( 2019. 01 ~ 2019. 08 )",
+      "title": "Studio B2B ( 2019. 12 ~ 2022. 01 )",
       "img": "./projects/arscale/arscale_004.png",
-      "desc": "사용자가 제작한 3D모델을 웹과, 모바일, 증강현실, 가상현실로 볼수있도록 해주는 멀티 플랫폼을 런칭하였고, 그 서비스의 FrontEnd와 간단한 Viewer 모듈을 개발하였다.<br />lambda 를 이용해 서버리스 api 로 서버와 통신, 3D모델은 S3를 이용했다.<br /><br />SCSS의 도움을 받아 반응형+적응형으로 되어있다.",
+      "desc": "",
       "tech": [
-        "언어 : JavaScript, HTML5, CSS3, Unity",
+        "언어 : JavaScript, HTML5, CSS3, Axios, Unity",
         "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
-        "디자인협업 : zeplin.io"
+        "디자인협업 : Figma"
       ],
-      "projects": [
-        {
-          "code": "pcweb",
-          "title": "PC웹",
-          "img": "./projects/arscale/arscale_004.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
-          "screens": [
-            {
-              "title": "001 메인",
-              "img": "./projects/arscale/arscale_001.png",
-              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
-            },
-            {
-              "title": "002 마이드라이브",
-              "img": "./projects/arscale/arscale_002.png",
-              "desc": "내 게시물(3D모델)들을 볼수있다."
-            },
-            {
-              "title": "003 상세",
-              "img": "./projects/arscale/arscale_003.png",
-              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-            },
-            {
-              "title": "004 상세이동시",
-              "img": "./projects/arscale/arscale_004.png",
-              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-            },
-            {
-              "title": "005 갤러리",
-              "img": "./projects/arscale/arscale_005.png",
-              "desc": "다른사람들의 게시물을 볼 수 있다."
-            },
-            {
-              "title": "006 이용가이드",
-              "img": "./projects/arscale/arscale_006.png",
-              "desc": "업로드 직전에 진행해야할 작업에 대해 설명한다."
-            },
-            {
-              "title": "007 수정및 업로드",
-              "img": "./projects/arscale/arscale_007.png",
-              "desc": "업로드시 프로퍼티를 설정한다."
-            }
-          ]
-        },
-        {
-          "code": "mobile",
-          "title": "모바일",
-          "img": "./projects/arscale/arscale_mob_000.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
-          "screens": [
-            {
-              "title": "000 메인페이지",
-              "img": "./projects/arscale/arscale_mob_000.png",
-              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
-            },
-            {
-              "title": "001 마이드라이브",
-              "img": "./projects/arscale/arscale_mob_001.png",
-              "desc": "내 게시물(3D모델)들을 볼수있다."
-            },
-            {
-              "title": "002 상세",
-              "img": "./projects/arscale/arscale_mob_002.png",
-              "desc": "모바일에서는 3D모델의 스틸컷 이미지를 보여준다."
-            },
-            {
-              "title": "003 내상태정보및메뉴",
-              "img": "./projects/arscale/arscale_mob_003.png",
-              "desc": "전체메뉴와 내 상태를 보여준다."
-            },
-            {
-              "title": "004 갤러리",
-              "img": "./projects/arscale/arscale_mob_004.png",
-              "desc": "다른사람들의 게시물을 볼 수 있다."
-            },
-            {
-              "title": "005 로그인",
-              "img": "./projects/arscale/arscale_mob_005.png",
-              "desc": "로그인 페이지, SNS로그인을 비롯한 작업들이 되어있다."
-            }
-          ]
-        }
-      ]
+      "screens": []
+    },
+    {
+      "code": "studiob2c",
+      "title": "Studio B2B ( 2019. 12 ~ 2022. 01 )",
+      "img": "./projects/arscale/arscale_004.png",
+      "desc": "",
+      "tech": [
+        "언어 : JavaScript, HTML5, CSS3, Axios, Unity",
+        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
+        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
+        "디자인협업 : Figma"
+      ],
+      "screens": []
     },
     {
       "code": "kt",
-      "title": "ARScale.io ( 2019. 01 ~ 2019. 08 )",
-      "img": "./projects/arscale/arscale_004.png",
-      "desc": "사용자가 제작한 3D모델을 웹과, 모바일, 증강현실, 가상현실로 볼수있도록 해주는 멀티 플랫폼을 런칭하였고, 그 서비스의 FrontEnd와 간단한 Viewer 모듈을 개발하였다.<br />lambda 를 이용해 서버리스 api 로 서버와 통신, 3D모델은 S3를 이용했다.<br /><br />SCSS의 도움을 받아 반응형+적응형으로 되어있다.",
+      "title": "KT통화비서 ( 2019. 01 ~ 2019. 08 )",
+      "img": "./projects/kt/arscale_004.png",
+      "desc": "준비중",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3, Unity",
         "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
         "디자인협업 : zeplin.io"
       ],
-      "projects": [
-        {
-          "code": "pcweb",
-          "title": "PC웹",
-          "img": "./projects/arscale/arscale_004.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
-          "screens": [
-            {
-              "title": "001 메인",
-              "img": "./projects/arscale/arscale_001.png",
-              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
-            },
-            {
-              "title": "002 마이드라이브",
-              "img": "./projects/arscale/arscale_002.png",
-              "desc": "내 게시물(3D모델)들을 볼수있다."
-            },
-            {
-              "title": "003 상세",
-              "img": "./projects/arscale/arscale_003.png",
-              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-            },
-            {
-              "title": "004 상세이동시",
-              "img": "./projects/arscale/arscale_004.png",
-              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-            },
-            {
-              "title": "005 갤러리",
-              "img": "./projects/arscale/arscale_005.png",
-              "desc": "다른사람들의 게시물을 볼 수 있다."
-            },
-            {
-              "title": "006 이용가이드",
-              "img": "./projects/arscale/arscale_006.png",
-              "desc": "업로드 직전에 진행해야할 작업에 대해 설명한다."
-            },
-            {
-              "title": "007 수정및 업로드",
-              "img": "./projects/arscale/arscale_007.png",
-              "desc": "업로드시 프로퍼티를 설정한다."
-            }
-          ]
-        },
-        {
-          "code": "mobile",
-          "title": "모바일",
-          "img": "./projects/arscale/arscale_mob_000.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
-          "screens": [
-            {
-              "title": "000 메인페이지",
-              "img": "./projects/arscale/arscale_mob_000.png",
-              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
-            },
-            {
-              "title": "001 마이드라이브",
-              "img": "./projects/arscale/arscale_mob_001.png",
-              "desc": "내 게시물(3D모델)들을 볼수있다."
-            },
-            {
-              "title": "002 상세",
-              "img": "./projects/arscale/arscale_mob_002.png",
-              "desc": "모바일에서는 3D모델의 스틸컷 이미지를 보여준다."
-            },
-            {
-              "title": "003 내상태정보및메뉴",
-              "img": "./projects/arscale/arscale_mob_003.png",
-              "desc": "전체메뉴와 내 상태를 보여준다."
-            },
-            {
-              "title": "004 갤러리",
-              "img": "./projects/arscale/arscale_mob_004.png",
-              "desc": "다른사람들의 게시물을 볼 수 있다."
-            },
-            {
-              "title": "005 로그인",
-              "img": "./projects/arscale/arscale_mob_005.png",
-              "desc": "로그인 페이지, SNS로그인을 비롯한 작업들이 되어있다."
-            }
-          ]
-        }
-      ]
+      "screens": []
     },
     {
-      "code": "theyeyak",
-      "title": "ARScale.io ( 2019. 01 ~ 2019. 08 )",
-      "img": "./projects/arscale/arscale_004.png",
-      "desc": "사용자가 제작한 3D모델을 웹과, 모바일, 증강현실, 가상현실로 볼수있도록 해주는 멀티 플랫폼을 런칭하였고, 그 서비스의 FrontEnd와 간단한 Viewer 모듈을 개발하였다.<br />lambda 를 이용해 서버리스 api 로 서버와 통신, 3D모델은 S3를 이용했다.<br /><br />SCSS의 도움을 받아 반응형+적응형으로 되어있다.",
+      "code": "setaws",
+      "title": "AWS Tools ( 2019. 01 ~ 2019. 08 )",
+      "img": "./projects/setaws/setaws_001.png",
+      "desc": "준비중",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3, Unity",
         "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
         "디자인협업 : zeplin.io"
       ],
-      "projects": [
-        {
-          "code": "pcweb",
-          "title": "PC웹",
-          "img": "./projects/arscale/arscale_004.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
-          "screens": [
-            {
-              "title": "001 메인",
-              "img": "./projects/arscale/arscale_001.png",
-              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
-            },
-            {
-              "title": "002 마이드라이브",
-              "img": "./projects/arscale/arscale_002.png",
-              "desc": "내 게시물(3D모델)들을 볼수있다."
-            },
-            {
-              "title": "003 상세",
-              "img": "./projects/arscale/arscale_003.png",
-              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-            },
-            {
-              "title": "004 상세이동시",
-              "img": "./projects/arscale/arscale_004.png",
-              "desc": "내 게시물을 상세보기 할수있다. 이때 모델을 마우스로 컨트롤(크기, 위치, 회전) 할 수 있다."
-            },
-            {
-              "title": "005 갤러리",
-              "img": "./projects/arscale/arscale_005.png",
-              "desc": "다른사람들의 게시물을 볼 수 있다."
-            },
-            {
-              "title": "006 이용가이드",
-              "img": "./projects/arscale/arscale_006.png",
-              "desc": "업로드 직전에 진행해야할 작업에 대해 설명한다."
-            },
-            {
-              "title": "007 수정및 업로드",
-              "img": "./projects/arscale/arscale_007.png",
-              "desc": "업로드시 프로퍼티를 설정한다."
-            }
-          ]
-        },
-        {
-          "code": "mobile",
-          "title": "모바일",
-          "img": "./projects/arscale/arscale_mob_000.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
-          "screens": [
-            {
-              "title": "000 메인페이지",
-              "img": "./projects/arscale/arscale_mob_000.png",
-              "desc": "Dimmed 처리된 영상이 백그라운드로 깔린다.<br />이때 인터넷이 느리면 이미지로 대체되어 데이터를 절약한다."
-            },
-            {
-              "title": "001 마이드라이브",
-              "img": "./projects/arscale/arscale_mob_001.png",
-              "desc": "내 게시물(3D모델)들을 볼수있다."
-            },
-            {
-              "title": "002 상세",
-              "img": "./projects/arscale/arscale_mob_002.png",
-              "desc": "모바일에서는 3D모델의 스틸컷 이미지를 보여준다."
-            },
-            {
-              "title": "003 내상태정보및메뉴",
-              "img": "./projects/arscale/arscale_mob_003.png",
-              "desc": "전체메뉴와 내 상태를 보여준다."
-            },
-            {
-              "title": "004 갤러리",
-              "img": "./projects/arscale/arscale_mob_004.png",
-              "desc": "다른사람들의 게시물을 볼 수 있다."
-            },
-            {
-              "title": "005 로그인",
-              "img": "./projects/arscale/arscale_mob_005.png",
-              "desc": "로그인 페이지, SNS로그인을 비롯한 작업들이 되어있다."
-            }
-          ]
-        }
-      ]
+      "screens": []
     }
   ]
 }
