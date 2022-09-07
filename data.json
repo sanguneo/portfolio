@@ -1092,7 +1092,7 @@
         },
         {
           "title": "cfdist (cloudfront 기본동작 자동화)",
-          "img": "./projects/setaws/setaws_01.png",
+          "img": "./projects/setaws/setaws_02.png",
           "desc": "cloudfront 배포를 찾아 쉽게 invalidation을 진행"
         }
       ]

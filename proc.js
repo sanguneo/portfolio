@@ -29,8 +29,8 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
 
     // 목차
     let indexPageidx = 1;
-    const front = portfolio.projects.slice(0,9);
-    const behind = portfolio.projects.slice(10,19);
+    const front = portfolio.projects.slice(0,14);
+    const behind = portfolio.projects.slice(15,19);
     let indexPage = pageMaker(`
     <div class='title'>목차</div>
     <div class='descWhole'>${historyPageExist ? `<h2 data-id='historyPage'>히스토리<span>${indexPageidx++}</span></h2><br>` : ''}${front.map(e=>`<h2 data-id='${e.code}'>${e.title}<span>${indexPageidx++}</span></h2>${(e.projects && e.projects.length>0) ? '<br/>' + e.projects.map(r=>`<h3 data-id='${e.code}_${r.code}'>${r.title}<span>${indexPageidx++}</span></h3>`).join('<br />') : ''}`).join('<br />')}</div>`
