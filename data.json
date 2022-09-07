@@ -726,7 +726,7 @@
       "code": "studiob2b",
       "title": "Studio B2B ( 2019. 12 ~ 2022. 01 )",
       "img": "./projects/arscale/arscale_004.png",
-      "desc": "",
+      "desc": "준비중",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3, Axios, Unity",
         "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
@@ -737,9 +737,9 @@
     },
     {
       "code": "studiob2c",
-      "title": "Studio B2B ( 2019. 12 ~ 2022. 01 )",
+      "title": "Studio B2C ( 2019. 12 ~ 2022. 01 )",
       "img": "./projects/arscale/arscale_004.png",
-      "desc": "",
+      "desc": "준비중",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3, Axios, Unity",
         "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
@@ -751,7 +751,7 @@
     {
       "code": "kt",
       "title": "KT통화비서 ( 2019. 01 ~ 2019. 08 )",
-      "img": "./projects/kt/arscale_004.png",
+      "img": "./projects/arscale/arscale_004.png",
       "desc": "준비중",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3, Unity",
@@ -767,10 +767,9 @@
       "img": "./projects/setaws/setaws_001.png",
       "desc": "준비중",
       "tech": [
-        "언어 : JavaScript, HTML5, CSS3, Unity",
-        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
-        "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
-        "디자인협업 : zeplin.io"
+        "언어 : Bash",
+        "모듈 : AWS CLI",
+        "사용서비스 : AWS (STS, S3)"
       ],
       "screens": []
     }
