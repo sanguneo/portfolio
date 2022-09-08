@@ -19,6 +19,8 @@ body {
 .subpage {
     position: relative;
     height: 276mm;
+    display:flex;
+    flex-direction:column;
 }
 
 @page {
