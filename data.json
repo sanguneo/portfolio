@@ -5,63 +5,6 @@
   "history": "./history.png",
   "projects": [
     {
-      "code": "mysite",
-      "title": "개인사이트 개발 ( 2015. 08 ~ 2015. 11 )",
-      "img": "./projects/mysite/videoplayer.png",
-      "desc": "2015년 좋은 기회가 생겨 고용량의 개인 서버를 세팅할 수 있게 되었었다.<br>당시 공부와 분석을 목적으로 필요한 웹 프로그래밍을 시작하다, 요청에 의해 블로그에도 배포하였다.",
-      "tech": [
-        "환경 : Linux (Ubuntu)",
-        "언어 : PHP7.0, JS",
-        "라이브러리 : JQuery"
-      ],
-      "projects": [
-        {
-          "code": "photoalbum",
-          "title": "포토앨범",
-          "img": "./projects/mysite/001 photoalbum.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
-          "screens": [
-            {
-              "title": "001 포토앨범",
-              "img": "./projects/mysite/001 photoalbum.png",
-              "desc": "포토앨범 이미지 목록 화면<br>하위 디렉터리도 확인가능하며 썸네일을 사용해 확인이 빠르도록 설계함."
-            },
-            {
-              "title": "002 포토앨범 뷰",
-              "img": "./projects/mysite/002 photoalbumview.png",
-              "desc": "이미지 클릭 시 뜨는 뷰어<br>swipebox을 커스터마이징한 뷰어"
-            }
-          ]
-        },
-        {
-          "code": "musicplayer",
-          "title": "뮤직 플레이어",
-          "img": "./projects/mysite/musicplayer.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
-          "screens": [
-            {
-              "title": "뮤직 플레이어",
-              "img": "./projects/mysite/musicplayer.png",
-              "desc": "뮤직 플레이어 화면<br>jQuery 이용 mp3, ogg 등의 사운드 플레이<br>반복, 한곡반복, 가능"
-            }
-          ]
-        },
-        {
-          "code": "videoplayer",
-          "title": "비디오 플레이어",
-          "img": "./projects/mysite/videoplayer.png",
-          "desc": "웹 스트리밍으로 이용 가능한 영상들을 스트리밍 해준다.<br>< video > 는 특수하게 WebVTT 자막만을 이용하는데, 이는 srt자막과 유사하다. 그러나 이런 자막파일이 없는 경우가 대부분이어서 smi 자막을 파싱하여 HTML5 Video에서도 자막을 볼 수 있도록 해준다.<br>html5 비디오의 자막은 검은 바탕을 사용하는데 이 부분도 보완하여 적용했다.",
-          "screens": [
-            {
-              "title": "비디오 플레이어",
-              "img": "./projects/mysite/videoplayer.png",
-              "desc": "웹 스트리밍으로 이용 가능한 영상들을 스트리밍 해준다.<br>< video > 는 특수하게 WebVTT 자막만을 이용하는데, 이는 srt자막과 유사하다. 그러나 이런 자막파일이 없는 경우가 대부분이어서 smi 자막을 파싱하여 HTML5 Video에서도 자막을 볼 수 있도록 해준다.<br>html5 비디오의 자막은 검은 바탕을 사용하는데 이 부분도 보완하여 적용했다."
-            }
-          ]
-        }
-      ]
-    },
-    {
       "code": "inkrkamus",
       "title": "인한사전 InKrKamus 개발 ( 2010. 10 ~ )",
       "img": "./projects/inkrkamus/web/PCWEB001 wordsearch.png",
@@ -199,6 +142,63 @@
         }
       ],
       "screens": [
+      ]
+    },
+    {
+      "code": "mysite",
+      "title": "개인사이트 개발 ( 2015. 08 ~ 2015. 11 )",
+      "img": "./projects/mysite/videoplayer.png",
+      "desc": "2015년 좋은 기회가 생겨 고용량의 개인 서버를 세팅할 수 있게 되었었다.<br>당시 공부와 분석을 목적으로 필요한 웹 프로그래밍을 시작하다, 요청에 의해 블로그에도 배포하였다.",
+      "tech": [
+        "환경 : Linux (Ubuntu)",
+        "언어 : PHP7.0, JS",
+        "라이브러리 : JQuery"
+      ],
+      "projects": [
+        {
+          "code": "photoalbum",
+          "title": "포토앨범",
+          "img": "./projects/mysite/001 photoalbum.png",
+          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
+          "screens": [
+            {
+              "title": "001 포토앨범",
+              "img": "./projects/mysite/001 photoalbum.png",
+              "desc": "포토앨범 이미지 목록 화면<br>하위 디렉터리도 확인가능하며 썸네일을 사용해 확인이 빠르도록 설계함."
+            },
+            {
+              "title": "002 포토앨범 뷰",
+              "img": "./projects/mysite/002 photoalbumview.png",
+              "desc": "이미지 클릭 시 뜨는 뷰어<br>swipebox을 커스터마이징한 뷰어"
+            }
+          ]
+        },
+        {
+          "code": "musicplayer",
+          "title": "뮤직 플레이어",
+          "img": "./projects/mysite/musicplayer.png",
+          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
+          "screens": [
+            {
+              "title": "뮤직 플레이어",
+              "img": "./projects/mysite/musicplayer.png",
+              "desc": "뮤직 플레이어 화면<br>jQuery 이용 mp3, ogg 등의 사운드 플레이<br>반복, 한곡반복, 가능"
+            }
+          ]
+        },
+        {
+          "code": "videoplayer",
+          "title": "비디오 플레이어",
+          "img": "./projects/mysite/videoplayer.png",
+          "desc": "웹 스트리밍으로 이용 가능한 영상들을 스트리밍 해준다.<br>< video > 는 특수하게 WebVTT 자막만을 이용하는데, 이는 srt자막과 유사하다. 그러나 이런 자막파일이 없는 경우가 대부분이어서 smi 자막을 파싱하여 HTML5 Video에서도 자막을 볼 수 있도록 해준다.<br>html5 비디오의 자막은 검은 바탕을 사용하는데 이 부분도 보완하여 적용했다.",
+          "screens": [
+            {
+              "title": "비디오 플레이어",
+              "img": "./projects/mysite/videoplayer.png",
+              "desc": "웹 스트리밍으로 이용 가능한 영상들을 스트리밍 해준다.<br>< video > 는 특수하게 WebVTT 자막만을 이용하는데, 이는 srt자막과 유사하다. 그러나 이런 자막파일이 없는 경우가 대부분이어서 smi 자막을 파싱하여 HTML5 Video에서도 자막을 볼 수 있도록 해준다.<br>html5 비디오의 자막은 검은 바탕을 사용하는데 이 부분도 보완하여 적용했다."
+            }
+          ]
+        }
       ]
     },
     {
