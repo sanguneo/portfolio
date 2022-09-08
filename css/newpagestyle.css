@@ -180,7 +180,8 @@ img.inimg {
 }
 .screens {
     justify-content: space-between;
-    align-content: space-around;
+    /*align-content: space-around;*/
+    row-gap:5px;
     flex-flow: row wrap;
     overflow:overlay;
     overflow:auto;
