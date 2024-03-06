@@ -1157,11 +1157,11 @@
     {
       "code": "dainsights",
       "title": "디지털자산평가서비스 프론트엔드개발 (2023.09 ~ 2023. 12)",
-      "img": "./projects/dainsights/dainsights_.png",
+      "img": "./projects/dainsights/dainsights_main.png",
       "desc": "디지털자산의 평가의뢰와 평가 내용들, 현재 가치 등의 정보들을 한번에 확인할 수 있도록 서비스로 개발됨",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3",
-        "프레임워크&모듈 : ReactJS, NextJS, Emotion, Axios, react-query, hook-form, zustand",
+        "프레임워크&모듈 : ReactJS, NextJS, Rechart, Emotion, Axios, react-query, hook-form, zustand",
         "서버 : Vercel",
         "디자인협업 : Figma"
       ],
