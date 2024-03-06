@@ -1,6 +1,6 @@
 {
   "title": "PORTFOLIO",
-  "subtitle": "2022 나상권<br><span>iam@sanguneo.com<br>https://portfolio.sanguneo.com/</span>",
+  "subtitle": "2024 나상권<br><span>iam@sanguneo.com<br>https://portfolio.sanguneo.com/</span>",
   "desc": "그동안 공부하고 개발해온 작업들을 모아두었습니다.<br> 이미지를 클릭하면, 확대된 이미지와, 그 이미지에 대한 설명을 볼 수 있습니다.<br>히스토리 <strong>인쇄시에는</strong> 히스토리가 가로방향으로, 현재설명은 제외하고 인쇄됩니다.<br>히스토리는 2019년 이전의 내용입니다.<br><span>인쇄시 배경그래픽 인쇄를 반드시 체크해주세요.</span>",
   "history": "./history.png",
   "projects": [
@@ -985,7 +985,7 @@
       "img": "./projects/kt/kt_1.jpeg",
       "desc": "KT 통화비서 앱의 대규모 리뉴얼로, 테이블 매니저의 예약 서비스를 전략적으로 연동 서비스하게 되었습니다. SI와는 다르게, 서비스의 핵심만을 요약하여, KT 측에 API 형태로 제공하고, 클라이언트 서비스를 개발해 웹 뷰 형태로 제공했습니다.<br/>네이티브 앱과 웹뷰 사이의 통신에 대해도 방식을 직접 제안하여 적용되었습니다. 해당 개발은 Typescript 기반 React와 Zustand로 상태관리, react-query로 통신, 을 구현했습니다.<br/>통신 시 보안을 위해 키를 이용한 암호화를 진행하였고, 디버깅을 방지하기 위한 여러 가지 연구로 소스 보안에도 신경 썼습니다.<br/>다음에 이 서비스를 기반으로 다시 회사 서비스를 개편할 수 있도록 코드 및 성능 최적화에 초점을 맞추었습니다.<br/><br/>AppStore/PlayStore ->KT 통화비서->예약관리",
       "tech": [
-        "언어 : TypeScript, HTML5, CSS3, Unity",
+        "언어 : TypeScript, HTML5, CSS3",
         "프레임워크&모듈 : ReactJS, Axios, react-query, hook-form, zustand(recoil), cryptoJS",
         "서버 : AWS (S3, Cloudfront)",
         "디자인협업 : Figma"
@@ -1073,7 +1073,6 @@
         }
       ]
     },
-
     {
       "code": "setaws",
       "title": "AWS Tools ( 2019. 01 ~  )",
@@ -1094,6 +1093,98 @@
           "title": "cfdist (cloudfront 기본동작 자동화)",
           "img": "./projects/setaws/setaws_02.png",
           "desc": "cloudfront 배포를 찾아 쉽게 invalidation을 진행"
+        }
+      ]
+    },
+    {
+      "code": "acon3d",
+      "title": "ACON3D 개발 및 유지보수 (2022.11 ~ 2024. 02)",
+      "img": "./projects/acon3d/acon_main.png",
+      "desc": "ACON3D 사이트를 개발 유지보수 했습니다. 해당 작업에는 사이트 개편과 성능최적화 및 커뮤니티 개발이 포함되어있습니다.",
+      "tech": [
+        "언어 : TypeScript, HTML5, CSS3",
+        "프레임워크&모듈 : ReactJS, NextJS, graphQl, Apollo, Emotion, Axios, react-query, hook-form, zustand, Posgresql",
+        "서버 : Vercel, AWS",
+        "디자인협업 : Figma"
+      ],
+      "screens": [
+        {
+          "title": "메인",
+          "img": "./projects/acon3d/acon_main.png",
+          "desc": "개편된 메인입니다. 배너 관리 개편과 성능 최적화가 포함되어있습니다."
+        },
+        {
+          "title": "프로덕트 리스트",
+          "img": "./projects/acon3d/acon_product_list.png",
+          "desc": "판매중인 에셋들을 확인할 수 있는 페이지 입니다."
+        },
+        {
+          "title": "프로덕트 리스트(코치 마크)",
+          "img": "./projects/acon3d/acon_coachmark.png",
+          "desc": "개편되 사이트에 적응할 수 있도록 디렉션을 보여주는 코치마크를 직접 개발하였습니다."
+        },
+        {
+          "title": "커뮤니티",
+          "img": "./projects/acon3d/acon_com.png",
+          "desc": "에이콘 커뮤니티 개발을 진행하였습니다. Restful api 에 axios, react-query 를 이용하여 통신하였습니다."
+        }
+      ]
+    },
+    {
+      "code": "hansin",
+      "title": "한신 콘설탄트 회사 홈페이지 제작 (2023.06 ~ 2023.10)",
+      "img": "./projects/hansin/hansin_main.png",
+      "desc": "한신콘설탄트 의 회사 사이트 구축 프로젝트로 프로젝트 매니징, 기획, 및 프론트/백엔드 모두 개발을 진행 했습니다.",
+      "tech": [
+        "언어 : TypeScript, HTML5, CSS3",
+        "프레임워크&모듈 : ReactJS, NextJS, Axios, react-query, hook-form, zustand, Posgresql",
+        "서버 : Vercel",
+        "디자인협업 : Figma"
+      ],
+      "screens": [
+        {
+          "title": "메인",
+          "img": "./projects/hansin/hansin_main.png",
+          "desc": "사이트 메인"
+        },
+        {
+          "title": "문의하기",
+          "img": "./projects/hansin/hansin_inquiry.png",
+          "desc": "사이트 내 문의하기로 NextJS 기반의 API 아키텍쳐를 이용해 백앤드까지 개발하여 진행했습니다."
+        }
+      ]
+    },
+    {
+      "code": "dainsights",
+      "title": "디지털자산평가서비스 프론트엔드개발 (2023.09 ~ 2023. 12)",
+      "img": "./projects/dainsights/dainsights_.png",
+      "desc": "디지털자산의 평가의뢰와 평가 내용들, 현재 가치 등의 정보들을 한번에 확인할 수 있도록 서비스로 개발됨",
+      "tech": [
+        "언어 : TypeScript, HTML5, CSS3",
+        "프레임워크&모듈 : ReactJS, NextJS, Emotion, Axios, react-query, hook-form, zustand",
+        "서버 : Vercel",
+        "디자인협업 : Figma"
+      ],
+      "screens": [
+        {
+          "title": "메인",
+          "img": "./projects/dainsights/dainsights_main.png",
+          "desc": "디지털자산 관련 헤드라인이나 정보들을 확인할 수 있고, 각 거래소의 정보도 한 페이지에서 확인이 가능합니다."
+        },
+        {
+          "title": "가상자산 상세",
+          "img": "./projects/dainsights/dainsights_detail.png",
+          "desc": "가상자산 상세 정보를 보여줍니다. 어떤 역사를 가지고있고 얼만큼 개발이 활성화되어있는지, 얼만큼 거래가 되고 있는지 등 상세한 정보를 확인할 수 있습니다."
+        },
+        {
+          "title": "가상자산 하이라이트",
+          "img": "./projects/dainsights/dainsights_highlight.png",
+          "desc": "가상자산들의 변동성이나 인기 위험요소들을 리스트로 보여줍니다. 고객들은 이를 통해 가상자산 투자에 대한 성향에 따라 쉬운 참고 자료가 될 수 있습니다."
+        },
+        {
+          "title": "가상자산 검색",
+          "img": "./projects/dainsights/dainsights_search.png",
+          "desc": "가상자산을 직접 검색해 볼 수 있습니다. 검색된 가상자산을 클릭해 상세로 입장 할 수 있고, 평가등급도 확인할 수 있습니다."
         }
       ]
     }
