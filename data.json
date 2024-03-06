@@ -809,7 +809,7 @@
         "언어 : JavaScript, HTML5, CSS3",
         "프레임워크&모듈 : NodeJS, VueJS, Nuxt (With SSR), Vuex, JWT",
         "서버 : AWS (EC2)",
-        "디자인협업 : zeplin.io"
+        "디자인협업 : zeplin"
       ],
       "screens": [
         {
@@ -988,7 +988,8 @@
         "언어 : TypeScript, HTML5, CSS3",
         "프레임워크&모듈 : ReactJS, Axios, react-query, hook-form, zustand(recoil), cryptoJS",
         "서버 : AWS (S3, Cloudfront)",
-        "디자인협업 : Figma"
+        "디자인협업 : Figma",
+        "확인 : https://www.tablemanager.io/kt"
       ],
       "screens": [
         {
@@ -1105,7 +1106,8 @@
         "언어 : TypeScript, HTML5, CSS3",
         "프레임워크&모듈 : ReactJS, NextJS, graphQl, Apollo, Emotion, Axios, react-query, hook-form, zustand, Posgresql",
         "서버 : Vercel, AWS",
-        "디자인협업 : Figma"
+        "디자인협업 : Figma",
+        "확인 : https://www.acon3d.com"
       ],
       "screens": [
         {
@@ -1139,7 +1141,8 @@
         "언어 : TypeScript, HTML5, CSS3",
         "프레임워크&모듈 : ReactJS, NextJS, Axios, react-query, hook-form, zustand, Posgresql",
         "서버 : Vercel",
-        "디자인협업 : Figma"
+        "디자인협업 : Figma",
+        "확인 : https://www.hscont.co.kr"
       ],
       "screens": [
         {
@@ -1163,7 +1166,8 @@
         "언어 : TypeScript, HTML5, CSS3",
         "프레임워크&모듈 : ReactJS, NextJS, Rechart, Emotion, Axios, react-query, hook-form, zustand",
         "서버 : Vercel",
-        "디자인협업 : Figma"
+        "디자인협업 : Figma",
+        "확인 : https://www.dainsights.com"
       ],
       "screens": [
         {
