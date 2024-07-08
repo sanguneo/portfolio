@@ -1191,6 +1191,76 @@
           "desc": "가상자산을 직접 검색해 볼 수 있습니다. 검색된 가상자산을 클릭해 상세로 입장 할 수 있고, 평가등급도 확인할 수 있습니다."
         }
       ]
+    },
+    {
+      "code": "place",
+      "title": "미용실 마케팅 도구 ( 2024.04 ~ )",
+      "img": "./projects/place/10_place_rank.png",
+      "desc": "PWA로 제작된 네이버 내 플레이스(매장) 순위 관리 도구로, 매장내 고객관리 도구를 스크래핑해 고객 회원권 및 방문 정보를 확인할 수 있고, Firebase 를 이용해 푸시알림을 보내 마케팅에도 활용할 수 있습니다. ",
+      "tech": [
+        "언어 : TypeScript, HTML5, CSS3",
+        "프레임워크&모듈 : ReactJS, NextJS14(appRouter), Supabase, Firebase, GraphQl, Rechart, tailwindCSS, hook-form, Axios",
+        "서버 : Vercel, Supabase",
+        "디자인 : Figma, v0(Vercel AI)",
+        "확인 : https://place.sanguneo.com"
+      ],
+      "screens": [
+        {
+          "title": "로그인",
+          "img": "./projects/place/01_login.png",
+          "desc": "마케팅 도구 로그인"
+        },
+        {
+          "title": "회원가입",
+          "img": "./projects/place/02_register.png",
+          "desc": "마케팅 도구 회원가입"
+        },
+        {
+          "title": "플레이스 등록",
+          "img": "./projects/place/03_submitplace.png",
+          "desc": "마케팅 도구에 플레이스(매장)을 등록합니다. 원하는 키워드와 추이 등을 등록하면 추후에 모니터링이 가능해집니다."
+        },
+        {
+          "title": "고객정보 (로그인시)",
+          "img": "./projects/place/04_clientinfo.png",
+          "desc": "매장내 고객관리 시스템을 내부적으로 크롤링하여 고객들이 보기 쉬운 형식으로 보여줍니다. 회원권 회수나 담당 디자이너등을 확인할 수 있습니다."
+        },
+        {
+          "title": "메시지 작성",
+          "img": "./projects/place/05_publishmessage.png",
+          "desc": "마케팅 메시지를 작성합니다. 메시지는 푸시를 할수도있고 게시만 할 수도 있습니다. 기본 DB가 있고, Firebase를 이용해 푸시합니다."
+        },
+        {
+          "title": "메시지 관리",
+          "img": "./projects/place/06_message_admin.png",
+          "desc": "등록된 메시지를 관리합니다."
+        },
+        {
+          "title": "메시지 상세",
+          "img": "./projects/place/08_message_detail.png",
+          "desc": "작성된 메시지를 보는 페이지입니다."
+        },
+        {
+          "title": "메시지 푸시알림",
+          "img": "./projects/place/09_message_push_pwa.jpg",
+          "desc": "메시지가 전송되면 안드로이드에서는 푸시알림으로 확인이 가능합니다."
+        },
+        {
+          "title": "플레이스 순위 (키워드별)",
+          "img": "./projects/place/10_place_rank.png",
+          "desc": "키워드별로 플레이스의 순위를 확인 할 수 있습니다. 네이버 검색을 분석해 내부적으로 직접 작성된 GraphQl쿼리 클라이언트를 이용해 검색결과를 받아오고, 이것들에서 순위를 추출합니다."
+        },
+        {
+          "title": "플레이스 상세",
+          "img": "./projects/place/11_place_detail.png",
+          "desc": "플레이스 순위 및 세부 관련 정보를 출력합니다."
+        },
+        {
+          "title": "플레이스 추이",
+          "img": "./projects/place/12_place_factor_chart.png",
+          "desc": "플레이스의 순위변화와 함께, 주요 변수들의 변화를 보여줍니다. 어떤것이 변화하면 순위가 오르는지 파악할 수 있고, 다른 플레이스와 비교할 수도 있습니다."
+        }
+      ]
     }
   ]
 }
