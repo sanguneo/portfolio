@@ -2,7 +2,6 @@
   "title": "PORTFOLIO",
   "subtitle": "2024 나상권<br><span>iam@sanguneo.com<br>https://portfolio.sanguneo.com/</span>",
   "desc": "그동안 공부하고 개발해온 작업들을 모아두었습니다.<br> 이미지를 클릭하면, 확대된 이미지와, 그 이미지에 대한 설명을 볼 수 있습니다.<br>히스토리 <strong>인쇄시에는</strong> 히스토리가 가로방향으로, 현재설명은 제외하고 인쇄됩니다.<br>히스토리는 2019년 이전의 내용입니다.<br><span>인쇄시 배경그래픽 인쇄를 반드시 체크해주세요.</span>",
-  "history": "./history.png",
   "projects": [
     {
       "code": "inkrkamus",
