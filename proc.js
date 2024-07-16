@@ -47,6 +47,7 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
     }));
     appendOnBody(indexPage);
     appendOnBody(indexPage2);
+    let historyPage;
 
     if (historyPageExist) {
         historyPage = pageMaker(`
@@ -56,7 +57,7 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
         `,'historyPage');
         historyPage.imgViewer = new ImageViewer(historyPage.querySelector('.contents > img'),{zoomValue: 200,x:842,y:626});
     }
-    appendOnBody(historyPage);
+    historyPage && appendOnBody(historyPage);
     //
     const mapBulk = (project, parent=null)=>{
         let hasSubproject = false;
