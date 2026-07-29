@@ -1,41 +1,67 @@
+:root {
+    --page-width: 210mm;
+    --page-height: 297mm;
+    --page-padding: 10mm;
+    --content-height: 276mm;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    padding: 0;
-    font: 12pt "Tahoma";
+    min-width: 320px;
 }
-* {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
+
 .page {
     position: relative;
-    width: 21cm;
-    min-height: 29.7cm;
-    padding: 1cm;
-    margin: 1cm auto;
-    background: white;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: var(--page-width);
+    min-height: var(--page-height);
+    padding: var(--page-padding);
+    margin: 32px auto;
 }
+
 .subpage {
     position: relative;
-    height: 276mm;
-    display:flex;
-    flex-direction:column;
+    height: var(--content-height);
+    padding-bottom: var(--space-8);
+    display: flex;
+    flex-direction: column;
 }
 
 @page {
     size: A4;
     margin: 0;
 }
+
 @media print {
+    html {
+        scroll-behavior: auto;
+    }
+
     .page {
+        width: auto;
+        min-height: auto;
         margin: 0;
-        border: initial;
-        border-radius: initial;
-        width: initial;
-        min-height: initial;
-        box-shadow: initial;
-        background: initial;
         page-break-after: always;
+        break-after: page;
+        box-shadow: none;
+    }
+
+    .page:last-child {
+        page-break-after: auto;
+        break-after: auto;
+    }
+
+    .subpage {
+        height: var(--content-height);
+        padding-bottom: var(--space-8);
     }
 }
