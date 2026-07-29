@@ -177,21 +177,6 @@ button {
     scroll-margin-top: 96px;
 }
 
-.page::before {
-    position: absolute;
-    top: var(--page-padding);
-    bottom: var(--page-padding);
-    left: var(--page-padding);
-    width: var(--space-1);
-    background: var(--color-accent);
-    content: "";
-}
-
-.page--cover::before,
-.page--index::before {
-    background: var(--color-ink);
-}
-
 .page--cover {
     background: var(--color-ink);
     color: var(--color-paper);
@@ -813,12 +798,6 @@ button {
         scroll-margin-top: 56px;
     }
 
-    .page::before {
-        top: 0;
-        bottom: 0;
-        left: 0;
-    }
-
     .subpage {
         height: auto;
         min-height: calc(100svh - var(--space-16));
@@ -1109,10 +1088,6 @@ button {
         min-height: 0;
         font-size: 0.75rem;
         line-height: 1.2;
-    }
-
-    .page::before {
-        display: block;
     }
 
     .media-trigger {
