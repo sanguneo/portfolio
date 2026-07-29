@@ -1,4 +1,3 @@
-try{
 fetch('./data.json').then(response => response.json()).then(function _init(data) {
     let portfolio = data;
 
@@ -27,26 +26,35 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
     let historyPageExist = false;
     if(portfolio.history && portfolio.history.length !== 0) historyPageExist = true;
 
-    // 목차
+    // 목차 : 프로젝트/서브프로젝트를 한 줄씩 펼친 뒤 페이지 용량만큼 자동 분할
+    const INDEX_LINES_PER_PAGE = 28;   // 목차 1페이지 가용 943px / 항목당 약 31px
     let indexPageidx = 1;
-    const front = portfolio.projects.slice(0,14);
-    const behind = portfolio.projects.slice(15,19);
-    let indexPage = pageMaker(`
-    <div class='title'>목차</div>
-    <div class='descWhole'>${historyPageExist ? `<h2 data-id='historyPage'>히스토리<span>${indexPageidx++}</span></h2><br>` : ''}${front.map(e=>`<h2 data-id='${e.code}'>${e.title}<span>${indexPageidx++}</span></h2>${(e.projects && e.projects.length>0) ? '<br/>' + e.projects.map(r=>`<h3 data-id='${e.code}_${r.code}'>${r.title}<span>${indexPageidx++}</span></h3>`).join('<br />') : ''}`).join('<br />')}</div>`
-    ,null, true);
-    let indexPage2 = pageMaker(`
-    <div class='title'></div>
-    <div class='descWhole'>${behind.map(e=>`<h2 data-id='${e.code}'>${e.title}<span>${indexPageidx++}</span></h2>${(e.projects && e.projects.length>0) ? '<br/>' + e.projects.map(r=>`<h3 data-id='${e.code}_${r.code}'>${r.title}<span>${indexPageidx++}</span></h3>`).join('<br />') : ''}`).join('<br />')}</div>`
-        ,null, true);
+    const indexEntries = [];
+    if (historyPageExist) indexEntries.push({ tag: 'h2', id: 'historyPage', title: '히스토리' });
+    portfolio.projects.forEach((project) => {
+        indexEntries.push({ tag: 'h2', id: project.code, title: project.title });
+        (project.projects || []).forEach((sub) => {
+            indexEntries.push({ tag: 'h3', id: `${project.code}_${sub.code}`, title: sub.title });
+        });
+    });
+    indexEntries.forEach((entry) => { entry.page = indexPageidx++; });
 
-    [indexPage, indexPage2].forEach(i=>i.querySelectorAll('[data-id]').forEach((e)=>{
-        e.onclick = function() {
-            body.querySelector('#'+this.getAttribute('data-id')).scrollIntoView({ block: 'start',  behavior: 'smooth' });
-        }
-    }));
-    appendOnBody(indexPage);
-    appendOnBody(indexPage2);
+    for (let offset = 0; offset < indexEntries.length; offset += INDEX_LINES_PER_PAGE) {
+        const chunk = indexEntries.slice(offset, offset + INDEX_LINES_PER_PAGE);
+        const indexPage = pageMaker(`
+    <div class='title'>${offset === 0 ? '목차' : ''}</div>
+    <div class='descWhole'>${chunk.map(entry =>
+            `<${entry.tag} data-id='${entry.id}'>${entry.title}<span>${entry.page}</span></${entry.tag}>`
+        ).join('')}</div>`, null, true);
+        indexPage.querySelectorAll('[data-id]').forEach((e)=>{
+            e.onclick = function() {
+                const target = body.querySelector('#' + this.getAttribute('data-id'));
+                if (target) target.scrollIntoView({ block: 'start', behavior: 'smooth' });
+            }
+        });
+        appendOnBody(indexPage);
+    }
+
     let historyPage;
 
     if (historyPageExist) {
@@ -60,40 +68,49 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
     historyPage && appendOnBody(historyPage);
     //
     const mapBulk = (project, parent=null)=>{
-        let hasSubproject = false;
-        let techStack = [];
-        project.desc = (project.desc && project.desc.length >0) ? project.desc : parent.desc;
-        try {
-            if(project.projects.length >0) hasSubproject = true;
-        }catch (e){}
-        try {
-            if(project.tech.length >0) techStack = project.tech;
-        }catch (e){
-            try {
-                if(parent.tech.length >0) techStack = parent.tech;
-            }catch (e){}
-        }
+        const subprojects = project.projects || [];
+        const hasSubproject = subprojects.length > 0;
+        const screens = project.screens || [];
+        project.desc = (project.desc && project.desc.length > 0) ? project.desc : (parent ? parent.desc : '');
 
+        let techStack = [];
+        if (project.tech && project.tech.length > 0) techStack = project.tech;
+        else if (parent && parent.tech && parent.tech.length > 0) techStack = parent.tech;
 
         const period = project.title.match(periodRegExp);
-        const periodText = period? `<div class='period'>${project.title.match(periodRegExp)[0]}</div>` : '';
+        const periodText = period ? `<div class='period'>${period[0]}</div>` : '';
+        const techBlock = techStack.length > 0
+            ? `<div class='techStack'>` + techStack.map(tech=>`<strong>${tech.replace(':',': </strong>')}`).join('<br>') + `</div>`
+            : '';
+        const pageId = `${parent && parent.code ? parent.code + '_' : ''}${project.code}`;
 
         if (hasSubproject) {
             appendOnBody(pageMaker(`
                 <div class='title'>${project.title.replace(periodRegExp,'')}${periodText}</div>
                 <div class='contents'>
-                    ${project.projects.map((subproject)=>
-                        `<div class="inimg inimg${project.projects.length}"
+                    ${subprojects.map((subproject)=>
+                        `<div class="inimg inimg${subprojects.length}"
                             rel="${project.code}" title="${project.desc}" data-img="${project.img}"
                             style='background-image:url("${subproject.img}")' ></div>`).join('\n')
                     }
                 </div>
                 <div class='descBottom'>
-                    ${techStack.length > 0 ? `<div class='techStack'>` + techStack.map(tech=>`<strong>${tech.replace(':',': </strong>')}`).join('<br>') + `</div>` : ''}
+                    ${techBlock}
                     <div class='descSubject${techStack.length > 0 ? '' : ' descAlone'}'>${project.desc}</div>
                 </div>
-            `,`${parent && parent.code ? parent.code + '_' : ''}${project.code}`));
-            project.projects.forEach((subproject)=>mapBulk(subproject, project));
+            `, pageId));
+            subprojects.forEach((subproject)=>mapBulk(subproject, project));
+        } else if (!project.img) {
+            // 이미지를 공개할 수 없는 프로젝트 : 본문 전폭 레이아웃
+            appendOnBody(pageMaker(`
+                <div class='title'>${project.title.replace(periodRegExp,'')}${periodText}</div>
+                <div class='contents textOnly'>
+                    <div class="descGold descGoldWide">
+                        ${techBlock}
+                        <div class='descSubject descAlone'>${project.desc}</div>
+                    </div>
+                </div>
+            `, pageId));
         } else {
             appendOnBody(pageMaker(`
                 <div class='title'>${project.title.replace(periodRegExp,'')}${periodText}</div>
@@ -102,18 +119,18 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
                         rel="${project.code}" title="${project.desc}" data-img="${project.img}"
                         style='background-image:url("${project.img}")'></div>
                     <div class="descGold">
-                        ${techStack.length > 0 ? `<div class='techStack'>` + techStack.map(tech=>`<strong>${tech.replace(':',': </strong>')}`).join('<br>') + `</div>` : ''}
+                        ${techBlock}
                         <div class='descSubject${techStack.length > 0 ? '' : ' descAlone'}'>${project.desc}</div>
                     </div>
                 </div>
-                <div class='descBottom screens'>${project.screens.map((screen)=>
+                <div class='descBottom screens'>${screens.map((screen)=>
                     `<div class="screen" rel="${project.code}" title="${screen.desc}" data-img="${screen.img}">
                         <div class="screenImg" style='background-image:url("${screen.img}")'></div>
                         <div class="screenTitle">${screen.title}</div>
                     </div>`).join('\n')+
-                    '<div class="screen empty"></div>'.repeat(project.screens.length % 4)
+                    '<div class="screen empty"></div>'.repeat(screens.length % 4)
                 }</div>
-            `,`${parent && parent.code ? parent.code + '_' : ''}${project.code}`));
+            `, pageId));
         }
     }
     portfolio.projects.forEach(mapBulk);
@@ -131,7 +148,8 @@ fetch('./data.json').then(response => response.json()).then(function _init(data)
             lightbox.open($(this))
         })
     },0);
+}).catch((e) => {
+    console.error('[portfolio] 렌더링 실패', e);
+    document.body.insertAdjacentHTML('afterbegin',
+        `<div style="padding:2cm;font:14pt 'Nanum Gothic'">포트폴리오를 불러오지 못했습니다. 잠시 후 새로고침해 주세요.</div>`);
 });
-}catch (e) {
-    alert(JSON.stringify(e))
-}

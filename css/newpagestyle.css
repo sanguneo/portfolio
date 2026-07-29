@@ -63,14 +63,21 @@ code {
     font-size: 20px;
 }
 .title {
-    height: 70px;
-    line-height: 70px;
+    min-height: 70px;
+    line-height: 1.25;
     font-size: 40px;
     font-weight: bold;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
 }
 .title > .period {
     font-size: 15px;
-    float: right;
+    white-space: nowrap;
+    align-self: flex-end;
+    padding-bottom: 8px;
 }
 @media print {
     #historyPage .contents > .iv-container {
@@ -101,6 +108,7 @@ code {
 .contents {
     width: 100%;
     height: 61%;
+    flex: 0 0 auto;
 }
 .inimg {
     float: left;
@@ -127,13 +135,22 @@ img.inimg {
     width: calc(33% - 10px);
     margin: 0 5px
 }
+.inimg4 {
+    width: calc(25% - 8px);
+    margin: 0 4px
+}
+.inimg5 {
+    width: calc(20% - 8px);
+    margin: 0 4px
+}
 .inimgGold {
     width: calc(50% - 5px);
     cursor: pointer;
 }
 .descBottom {
     display: flex;
-    height: calc(39% - 70px);
+    flex: 1 1 auto;
+    min-height: 0;
 }
 .descBottom > .descSubject.descAlone {
     width: 100%;
@@ -158,25 +175,44 @@ img.inimg {
     height: 100%;
     margin-left: 10px;
 }
+.contents.textOnly {
+    height: auto;
+    flex: 1 1 auto;
+    overflow: auto;
+}
+.descGold.descGoldWide {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-start;
+}
+.descGold.descGoldWide > .techStack {
+    margin-bottom: 24px;
+}
 .descWhole {
     margin-top: 30px;
     height: calc(100% - 100px);
 }
+.descWhole > h2, .descWhole > h3 {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    cursor: pointer;
+}
 .descWhole > h2 {
     margin: 10px 0 0 0;
     font-size: 15pt;
-    cursor: pointer;
 }
 .descWhole > h3 {
     width: calc(100% - 40px);
-    margin:0 0 0 40px;
+    margin: 0 0 0 40px;
     font-size: 12pt;
-    cursor: pointer;
 }
 .descWhole > h2 > span, .descWhole > h3 > span {
-    float: right;
-    font-size:20px;
+    margin-left: auto;
     margin-right: 20px;
+    font-size: 20px;
+    flex: 0 0 auto;
 }
 .screens {
     justify-content: space-between;
