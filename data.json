@@ -7,19 +7,25 @@
       "code": "inkrkamus",
       "title": "인한사전 InKrKamus 개발 ( 2010. 10 ~ )",
       "img": "./projects/inkrkamus/web/PCWEB001 wordsearch.png",
-      "desc": "인도네시아 협력요원으로 파견되기전 언어 공부 몇달, 그리고 파견되어서 몇달 간<br>새로운 언어를 학습한다는게 얼마나 힘든지 깨닫게 되었다.<br> 살아야하니 현지인과 부딫히며 깨우쳤지만, 한단계 더 높은 수준이 되려면 체계적인 학습이 필요했다.<br> 마침 동기 봉사단원들로부터 얻은 엑셀자료와 근처 한인들에게 얻은 자료들이 있었으나,<br> 이를 사용하기엔 매우 불편했다. 그래서 이것들을 다 합쳐서 편하게 만들고자 한달정도 C++로 사전 프로그램을 제작했고,<br> 인도네시아 커뮤니티, 한국외대, 그리고 현재까지도 KOICA 단원들에게 전해지고 있다.<br> <br> 아쉬운건 이것이 윈도우PC에서만 동작한다는 것이었고, 많은 사용자들이 요구함에 따라, 웹버전을 제작, 플랫폼에 제한없는 어플리케이션을 제작했다.<br> <br> 구) 윈도우PC 버전 <a href='http://blog.sanguneo.com/35'>http://blog.sanguneo.com/35</a> <br>            현) 웹 v3 <a href='https://inkrkamus.sanguneo.com/'>https://inkrkamus.sanguneo.com/</a>",
-      "tech": [],
+      "desc": "인도네시아 협력요원으로 파견되기 전 몇 달, 파견되고 나서 또 몇 달 동안 새로운 언어를 배우는 일이 얼마나 힘든지 알게 되었습니다.<br>살아야 하니 현지인과 부딪히며 익혔지만, 한 단계 더 올라가려면 체계적인 학습이 필요했습니다.<br><br>동기 봉사단원들에게 얻은 엑셀 자료와 근처 한인들에게 받은 자료가 있었는데, 그대로 쓰기엔 너무 불편했습니다. 전부 합쳐 편하게 쓰려고 한 달 정도 C++로 사전 프로그램을 만들었고, 인도네시아 커뮤니티와 한국외대, 그리고 지금까지도 KOICA 단원들에게 전해지고 있습니다.<br><br>아쉬운 점은 윈도우 PC에서만 돌아간다는 것이었습니다. 사용자 요청이 이어져 웹 버전을 만들었고, 이후로도 플랫폼 제약을 줄이는 방향으로 계속 옮겨 왔습니다. Windows(C++) → PC웹(Vue 1) → 모바일웹 → 웹 v3(React + Vite) 순으로, 16년째 이어지는 프로젝트입니다.<br><br>초기 Windows 버전 <a href='http://blog.sanguneo.com/35'>http://blog.sanguneo.com/35</a><br>현재 웹 v3 <a href='https://inkrkamus.sanguneo.com/'>https://inkrkamus.sanguneo.com/</a>",
+      "tech": [
+        "기간 : 2010.10 ~ 현재 (16년)",
+        "플랫폼 : Windows → PC웹 → 모바일웹 → 웹 v3",
+        "언어 : C++, JavaScript, TypeScript",
+        "표제어 : 35,984개",
+        "사용처 : KOICA 단원, 인도네시아 커뮤니티, 한국외대"
+      ],
       "projects": [
         {
           "code": "win32",
           "title": "윈도우 프로그램",
           "img": "./projects/inkrkamus/win32/003 chooseword.png",
-          "desc": "C++를 이용해 윈도우 어플리케이션 사전을 개발하였다.<br>다국어지원 윈도우 프로그램을 제작하는데 시간이 오래걸렸다.",
+          "desc": "C++로 윈도우 데스크톱 사전을 만들었습니다.<br>한국어와 인도네시아어를 함께 다뤄야 해서 다국어 처리에 시간이 오래 걸렸습니다.",
           "tech": [
             "환경 : Windows",
             "언어 : C++",
-            "API : Win32 Api",
-            "DB : Sqlite3"
+            "API : Win32 API",
+            "DB : SQLite3"
           ],
           "screens": [
             {
@@ -53,13 +59,13 @@
           "code": "web",
           "title": "PC웹",
           "img": "./projects/inkrkamus/web/PCWEB001 wordsearch.png",
-          "desc": "원래는 Electron 으로 윈도우 어플리케이션을 제작하였으나, 용량등의 이유로 웹어플리케이션으로 다시 제작하였다.",
+          "desc": "처음에는 Electron으로 윈도우 앱을 만들었지만 용량 문제로 웹 애플리케이션으로 다시 만들었습니다.",
           "tech": [
             "개발환경 : Linux (Ubuntu)",
-            "언어 : Javascript",
-            "서버 : NodeJS (heroku 이용)",
-            "프레임워크 : VueJS 1",
-            "DB : Sqlite3"
+            "언어 : JavaScript",
+            "서버 : Node.js (heroku 이용)",
+            "프레임워크 : Vue 1",
+            "DB : SQLite3"
           ],
           "screens": [
             {
@@ -85,7 +91,7 @@
             {
               "title": "006 템플릿",
               "img": "./projects/inkrkamus/web/PCWEB006 template.png",
-              "desc": "사전어플리케이션의 표시언어를 변환하기위해 사용<br>VueJS v1을 간단히 이용했다."
+              "desc": "사전애플리케이션의 표시언어를 변환하기위해 사용<br>Vue v1을 간단히 이용했다."
             },
             {
               "title": "007 사전언어선택",
@@ -103,13 +109,13 @@
           "code": "mobile",
           "title": "모바일웹",
           "img": "./projects/inkrkamus/web/MOBILEWEB002 search.png",
-          "desc": "모바일환경에 최적화된 모바일 웹",
+          "desc": "모바일 환경에 맞춰 화면과 검색 흐름을 다시 구성한 모바일 웹입니다.",
           "tech": [
             "개발환경 : Linux (Ubuntu)",
-            "서버 : NodeJS",
-            "언어 : Javascript",
-            "프레임워크 : VueJS 1",
-            "DB : Sqlite3"
+            "서버 : Node.js",
+            "언어 : JavaScript",
+            "프레임워크 : Vue 1",
+            "DB : SQLite3"
           ],
           "screens": [
             {
@@ -143,7 +149,7 @@
           "code": "react",
           "title": "웹 v3 (React + Vite)",
           "img": "./projects/inkrkamus/react/01_wordsearch.png",
-          "desc": "VueJS 1 + Node 서버로 돌던 2016년 웹버전을 10년 만에 React + Vite 정적 앱으로 이전했습니다. 이미 쓰는 사람이 있는 서비스라 URL과 검색 동작을 그대로 유지하면서 내부만 바꾸는 것이 조건이었습니다.<br><br>서버를 없애고 사전 데이터를 gzip JSON 한 덩이로 내려받는 구조로 바꿨습니다. 표제어 35,984개를 브라우저에서 색인해야 해서 색인 작업은 Web Worker로 분리했고, 덕분에 첫 화면이 뜬 뒤에도 입력이 멈추지 않습니다.<br><br>결과적으로 상시 서버 비용이 0원이 되었고, 정적 호스팅만으로 운영됩니다. 데이터가 전부 클라이언트에 있어 한 번 방문한 뒤에는 오프라인에서도 검색이 됩니다.",
+          "desc": "Vue 1 + Node 서버로 돌던 2016년 웹버전을 10년 만에 React + Vite 정적 앱으로 이전했습니다. 이미 쓰는 사람이 있는 서비스라 URL과 검색 동작을 그대로 유지하면서 내부만 바꾸는 것이 조건이었습니다.<br><br>서버를 없애고 사전 데이터를 gzip JSON 한 덩이로 내려받는 구조로 바꿨습니다. 표제어 35,984개를 브라우저에서 색인해야 해서 색인 작업은 Web Worker로 분리했고, 덕분에 첫 화면이 뜬 뒤에도 입력이 멈추지 않습니다.<br><br>결과적으로 상시 서버 비용이 0원이 되었고, 정적 호스팅만으로 운영됩니다. 데이터가 전부 클라이언트에 있어 한 번 방문한 뒤에는 오프라인에서도 검색이 됩니다.",
           "tech": [
             "언어 : TypeScript",
             "프레임워크 : React, Vite",
@@ -173,18 +179,18 @@
       "code": "mysite",
       "title": "개인사이트 개발 ( 2015. 08 ~ 2015. 11 )",
       "img": "./projects/mysite/videoplayer.png",
-      "desc": "2015년 좋은 기회가 생겨 고용량의 개인 서버를 세팅할 수 있게 되었었다.<br>당시 공부와 분석을 목적으로 필요한 웹 프로그래밍을 시작하다, 요청에 의해 블로그에도 배포하였다.",
+      "desc": "2015년에 기회가 생겨 고용량 개인 서버를 직접 세팅할 수 있게 되었습니다.<br>공부와 분석을 목적으로 필요한 것들을 하나씩 웹으로 만들다가, 요청이 있어 블로그에도 공개했습니다.",
       "tech": [
         "환경 : Linux (Ubuntu)",
         "언어 : PHP7.0, JS",
-        "라이브러리 : JQuery"
+        "라이브러리 : jQuery"
       ],
       "projects": [
         {
           "code": "photoalbum",
           "title": "포토앨범",
           "img": "./projects/mysite/001 photoalbum.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 갤러리를 만듬, 뷰어는 simpleLightBox활용",
+          "desc": "PHP로 파일을 인덱싱해 갤러리를 만들었습니다. 뷰어는 simpleLightBox를 활용했습니다.",
           "screens": [
             {
               "title": "001 포토앨범",
@@ -202,7 +208,7 @@
           "code": "musicplayer",
           "title": "뮤직 플레이어",
           "img": "./projects/mysite/musicplayer.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
+          "desc": "PHP로 파일을 인덱싱해 음악 플레이어를 만들었습니다.<br>jQuery와 HTML5 &lt;audio&gt; 태그로 자동 스트리밍이 되게 했습니다.",
           "screens": [
             {
               "title": "뮤직 플레이어",
@@ -215,7 +221,7 @@
           "code": "videoplayer",
           "title": "비디오 플레이어",
           "img": "./projects/mysite/videoplayer.png",
-          "desc": "웹 스트리밍으로 이용 가능한 영상들을 스트리밍 해준다.<br>< video > 는 특수하게 WebVTT 자막만을 이용하는데, 이는 srt자막과 유사하다. 그러나 이런 자막파일이 없는 경우가 대부분이어서 smi 자막을 파싱하여 HTML5 Video에서도 자막을 볼 수 있도록 해준다.<br>html5 비디오의 자막은 검은 바탕을 사용하는데 이 부분도 보완하여 적용했다.",
+          "desc": "웹에서 바로 볼 수 있는 영상들을 스트리밍합니다.<br><br>HTML5 &lt;video&gt;는 자막으로 WebVTT만 받습니다. srt와 형식이 비슷하지만, 실제로 가지고 있는 파일은 대부분 smi여서 smi를 파싱해 &lt;video&gt;에서도 자막이 보이도록 만들었습니다.<br>기본 자막이 검은 바탕으로 나오는 것도 함께 손봤습니다.",
           "screens": [
             {
               "title": "비디오 플레이어",
@@ -230,10 +236,10 @@
       "code": "apmcharts",
       "title": "APM 솔루션의 차트개발 ( 2015. 05 ~ 2017. 02 )",
       "img": "./projects/apmcharts/funnel.png",
-      "desc": "APM 솔루션의 특성상 데이터의 양, 속도, 부하 등을 매우 민감하게 분석할 수 있어야 한다.<br> 사실상 분석이라는 건 메모리사용량이나 네트워크 속도들을 직접 커맨드로 확인할 수 있지만,<br> 이런 작업들이 눈에 띄지 않고, 분석이 힘들다.<br>이를 해결하기 위해 시각화 작업을 하였다.<br><br><a href='http://blog.sanguneo.com/30'>http://blog.sanguneo.com/30</a> 에<br>이에 대해 학습한 내용을 정리했다.",
+      "desc": "APM 솔루션은 데이터의 양과 속도, 부하를 민감하게 볼 수 있어야 합니다.<br>메모리 사용량이나 네트워크 속도는 커맨드로도 확인할 수 있지만, 그렇게 보면 눈에 잘 띄지 않아 이상 징후를 잡기 어렵습니다.<br><br>그래서 이 지표들을 차트로 시각화하는 작업을 맡았습니다. 라이브러리 없이 VanillaJS로 그렸습니다.<br><br>학습한 내용은 <a href='http://blog.sanguneo.com/30'>http://blog.sanguneo.com/30</a> 에 정리했습니다.",
       "tech": [
         "개발환경 : Linux (Ubuntu)",
-        "언어 : Javascript (VanillaJS)"
+        "언어 : JavaScript (VanillaJS)"
       ],
       "screens": [
         {
@@ -252,10 +258,10 @@
       "code": "eventmodule",
       "title": "이벤트 모듈 개발 ( 2017. 07 ~ 2017. 08, 2018. 09 )",
       "img": "./projects/eventmodule/roulette.jpg",
-      "desc": "서비스에서 범용적으로 사용이 가능한 이벤트 모듈을 개발하였다.",
+      "desc": "여러 서비스에서 공통으로 쓸 수 있는 이벤트 페이지 모듈을 개발했습니다.<br><br>어디에 붙어도 충돌하지 않도록 VanillaJS로 작성하고, jQuery가 필요한 경우에만 추가로 로드하게 했습니다.",
       "tech": [
-        "언어 : Javascript (VanillaJS)",
-        "라이브러리 : JQuery (필요시 추가로드)"
+        "언어 : JavaScript (VanillaJS)",
+        "라이브러리 : jQuery (필요시 추가로드)"
       ],
       "screens": [
         {
@@ -274,18 +280,24 @@
       "code": "hairpin",
       "title": "hair.pin 서비스개발 ( 2017. 06 ~ )",
       "img": "./projects/hairpin/app/001 main.jpg",
-      "desc": "헤어다자이너 등의 미용업계 종사자나, 고객들 모두 이용할 수 있는 디자인 공유 앨범서비스<br> ReactJS, React Native, Redux-thunk, MongoDB, NodeJS, Sqlite3, Android, Swift 등의 언어를 이용하였고 현재 원스토어 마켓에 등록되어있다.",
-      "tech": [],
+      "desc": "헤어디자이너 등 미용업계 종사자와 고객이 함께 쓸 수 있는 디자인 공유 앨범 서비스입니다.<br><br>모바일 앱은 React Native로, 웹은 React로 만들고 상태 관리는 Redux-thunk로 맞췄습니다. 서버는 Node.js Express, 데이터는 MongoDB에 담았습니다.",
+      "tech": [
+        "언어 : JavaScript",
+        "프레임워크 : React, React Native, Redux-thunk",
+        "서버 : Node.js Express",
+        "DB : MongoDB, SQLite3",
+        "플랫폼 : Android, iOS"
+      ],
       "projects": [
         {
           "code": "app",
-          "title": "모바일 어플리케이션(IOS/ANDROID)",
+          "title": "모바일 애플리케이션 (iOS / Android)",
           "img": "./projects/hairpin/app/003 design.jpg",
-          "desc": "모바일 네이티브 어플리케이션을 개발하였다.<br>react-navigation를 사용하여 네비게이션을 구현하였다.",
+          "desc": "모바일 네이티브 애플리케이션을 개발했습니다.<br>화면 전환은 react-navigation으로 구현했습니다.",
           "tech": [
-            "언어 : JS (->IOS/ANDROID)",
+            "언어 : JavaScript (→ iOS / Android)",
             "프레임워크 : React Native, Redux-thunk",
-            "DB : Sqlite3"
+            "DB : SQLite3"
           ],
           "screens": [
             {
@@ -334,11 +346,11 @@
           "code": "web",
           "title": "웹 서비스",
           "img": "./projects/hairpin/web/004 taglist.png",
-          "desc": "웹 클라이언트, 디자인들을 확인할 수 있는 페이지이다.",
+          "desc": "공유된 디자인을 둘러볼 수 있는 웹 클라이언트입니다.",
           "tech": [
-            "언어 : Javascript",
-            "프레임워크 : ReactJS, Redux-thunk",
-            "서버 : NodeJS Express",
+            "언어 : JavaScript",
+            "프레임워크 : React, Redux-thunk",
+            "서버 : Node.js Express",
             "DB : MongoDB"
           ],
           "screens": [
@@ -381,11 +393,11 @@
       "code": "soracoin",
       "title": "암호화폐분석 서비스개발 ( 2018. 02 ~ 2018. 03 )",
       "img": "./projects/soracoin/003 statistics.png",
-      "desc": "한참 암호화폐에 관심이 많았던 시기에 회사동료들과의 정보공유와 투자계획수립을 위해<br> 서비스를 개발했다. VueJS를 이용하였고 데이터는 암호화된 csv 형태로 저장하였다.<br> 통계를 위해 화폐들을 클래스 인스턴스로 만들어 계산에 이용했다.",
+      "desc": "암호화폐에 관심이 몰렸던 시기에, 회사 동료들과 정보를 공유하고 투자 계획을 세우려고 만든 서비스입니다.<br><br>Vue로 화면을 만들고 데이터는 암호화한 csv로 저장했습니다. 통계를 내기 위해 화폐마다 클래스 인스턴스를 만들어 계산에 썼습니다.",
       "tech": [
-        "언어 : Javascript",
-        "프레임워크 : VueJS",
-        "서버 : NodeJS Express"
+        "언어 : JavaScript",
+        "프레임워크 : Vue",
+        "서버 : Node.js Express"
       ],
       "screens": [
         {
@@ -419,9 +431,9 @@
       "code": "twtalbum",
       "title": "트위터 앨범 개발 ( 2018. 04 )",
       "img": "./projects/twtalbum/002 album.png",
-      "desc": "트위터 API를 이용하기 위한 토이프로젝트로 시작, 앨범화하고 꾸미면서 발전했다.<br> 초기에는 파이썬을 이용했으나 사용이 익숙하지 않아 다시 NodeJS의 Request 등을 이용했다.",
+      "desc": "트위터 API를 써 보려고 시작한 토이 프로젝트입니다. 받아온 이미지를 앨범 형태로 정리하고 꾸미면서 기능이 늘어났습니다.<br><br>처음에는 파이썬으로 만들었지만 손에 익지 않아 Node.js의 Request로 다시 작성했습니다.",
       "tech": [
-        "언어 : Javascript"
+        "언어 : JavaScript"
       ],
       "screens": [
         {
@@ -450,10 +462,10 @@
       "code": "automation",
       "title": "업무 자동화 ( 2017. 08 )",
       "img": "./projects/automation/004 diff.png",
-      "desc": "반복적이고 소모적인 업무를 쉽게 진행하기위해 시작한 프로젝트로, 기획하고 개발하였다. 개발배포와 업무 등록 업무요청 및 사내메신저 시용등 다양한 분야에 사용 가능하다.",
+      "desc": "반복적이고 소모적인 업무를 줄이려고 직접 기획해서 만든 도구들입니다.<br><br>개발 배포, 업무 등록과 요청, 사내 메신저 발송까지 여러 갈래에 쓸 수 있게 만들었습니다.",
       "tech": [
-        "언어 : Javascript",
-        "프레임워크 : NodeJS, Electron, Chrome확장",
+        "언어 : JavaScript",
+        "프레임워크 : Node.js, Electron, Chrome확장",
         "API : JQL(JIRA Query Lang), 사내메신저API",
         "분석 : Fiddler 4",
         "패키지 : NSIS"
@@ -463,11 +475,11 @@
           "code": "buildit",
           "title": "빌드확인 자동화",
           "img": "./projects/automation/004 diff.png",
-          "desc": "개발업무진행후, 실서버에 적용시 반드시 거쳐야하는 과정에서 꼭 진행해야하는 부분으로 배포예정파일을 비교 확인하고, 검수 하는 절차를 진행해야한다. <br>이를 간소화 하기위해 JQL을 분석하여 NodeJS의 request 모듈을 이용해 서버에 정보를 요청하는 부분을 구현하였고, 이를 이용해 html로 어플리케이션을 만들어 Electron으로 패키징 하였다. <br>프로그램 배포는 NSIS를 이용한 설치파일을 통하였다.",
+          "desc": "개발한 내용을 실서버에 올리기 전에는 배포 예정 파일을 비교하고 검수하는 절차를 반드시 거쳐야 했습니다.<br><br>이 과정을 줄이기 위해 JQL을 분석하고 Node.js의 request 모듈로 서버에 정보를 요청하는 부분을 구현했습니다. 이를 화면으로 붙여 Electron으로 패키징했고, 배포는 NSIS 설치 파일로 했습니다.",
           "tech": [
-            "언어 : Javascript, HTML5 CSS3",
-            "프레임워크 : Electron, NodeJS",
-            "API : JQL(JIRA Query Lang)"
+            "언어 : JavaScript, HTML5, CSS3",
+            "프레임워크 : Electron, Node.js",
+            "API : JQL (JIRA Query Lang)"
           ],
           "screens": [
             {
@@ -496,11 +508,11 @@
           "code": "unified",
           "title": "통합업무도구",
           "img": "./projects/automation/102 attatched.png",
-          "desc": "배포 요청을 간단히 할 목적으로 시작한 프로젝트로, 크롬확장형태로 제작하여 document를 직접 제어하여 이질감이 없는 확장기능으로 추가하였다. <br>빌드요청 자동화기능뿐만 아니라 분석한 사내메신저 API를 이용해 업무 요청자 담당자등에게 메신저를 보내는 등의 업무를 수행한다.",
+          "desc": "배포 요청을 간단히 하려고 만든 크롬 확장입니다. document를 직접 제어해 원래 페이지에 있던 기능처럼 보이도록 붙였습니다.<br><br>빌드 요청 자동화뿐 아니라, 분석해 둔 사내 메신저 API로 업무 요청자와 담당자에게 메시지를 보내는 일도 처리합니다.",
           "tech": [
-            "언어 : Javascript, HTML5 CSS3",
+            "언어 : JavaScript, HTML5, CSS3",
             "프레임워크 : Chrome Extension",
-            "API : JQL(JIRA Query Lang)",
+            "API : JQL (JIRA Query Lang)",
             "분석 : Fiddler 4"
           ],
           "screens": [
@@ -533,11 +545,11 @@
       "code": "clickratio",
       "title": "클릭카운터 ( 2018. 02 ~ 2018. 03 )",
       "img": "./projects/clickratio/006 view.jpg",
-      "desc": "사이트 개편 작업 예비 조사를 위하여 메인화면 클릭 수 체크를 진행하는 모듈을 개발하였다.<br>백앤드와 공조하였으며, 데이터를 저장하는 부분만 백앤드쪽에서 맡아서 하고, 이를 모으고 가공하여 데이터로 만들고 뷰에 보여주는 부분은 직접 개발하였다. 가공에는 Bash 쉘이 사용되었다.",
+      "desc": "사이트 개편 전 예비 조사를 위해 메인 화면의 클릭 수를 측정하는 모듈을 만들었습니다.<br><br>백엔드와 나눠 작업해 데이터 적재만 백엔드가 맡고, 이를 모아 가공하고 화면으로 보여주는 부분은 직접 개발했습니다. 가공에는 Bash 셸을 썼습니다.",
       "tech": [
-        "언어 : Javascript, ShellScript(Bash)",
+        "언어 : JavaScript, ShellScript(Bash)",
         "BackEnd : PHP7",
-        "프레임워크 : NodeJS",
+        "프레임워크 : Node.js",
         "DB: File Log"
       ],
       "screens": [
@@ -572,9 +584,9 @@
       "code": "woorimfloor",
       "title": "건물관리 앱 개발 ( 2018. 05 )",
       "img": "./projects/woorimfloor/003 main.png",
-      "desc": "아버지의 요청으로 개발한 앱으로, 초기에는 그 요청이 명확하지 않아 Electron 으로 제작하고,<br> git의 원리처럼 초기파일과 그 변경사항만 저장하고 공유하는 식으로 개발했으나,<br> 모바일에 대한 요구 등의 명확한 요청으로 React Native 로 xlsx를 다루는 간단한 앱을 제작했다.",
+      "desc": "아버지의 요청으로 만든 앱입니다. 처음에는 요구사항이 뚜렷하지 않아 Electron으로 만들고, git처럼 초기 파일과 변경분만 저장해 공유하는 방식으로 접근했습니다.<br><br>이후 모바일에서 써야 한다는 요구가 분명해져서, React Native로 xlsx를 다루는 간단한 앱으로 다시 만들었습니다.",
       "tech": [
-        "언어 : Javascript",
+        "언어 : JavaScript",
         "프레임워크 : React Native, Electron",
         "DB: Excel"
       ],
@@ -610,10 +622,10 @@
       "code": "devsite",
       "title": "개발자사이트 ( 2018. 11  ~ 2019. 01 )",
       "img": "./projects/devsite/devsite_02.png",
-      "desc": "어반베이스의 Developer 사이트를 제작하여<br />개발자들에게 SDK와 API를 사용할수있는 메뉴얼과 데모를 제공하였다.<br />Vuepress에 Markdown parser 를 추가개발하여 제작하였고, async, await Promise 등의 최신 패턴이 사용되었다.<br />https://developer.urbanbase.com",
+      "desc": "어반베이스의 Developer 사이트를 만들어, 개발자들에게 SDK와 API 매뉴얼, 데모를 제공했습니다.<br><br>Vuepress에 Markdown parser를 추가 개발해 붙였고, async / await와 Promise 등 당시 최신 패턴을 적용했습니다.",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3",
-        "프레임워크 : NodeJS, VueJS, Vuepress",
+        "프레임워크 : Node.js, Vue, Vuepress",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
         "디자인협업 : zeplin.io"
       ],
@@ -654,10 +666,10 @@
       "code": "arscale",
       "title": "ARScale.io ( 2019. 01 ~ 2019. 08 )",
       "img": "./projects/arscale/arscale_004.png",
-      "desc": "사용자가 제작한 3D모델을 웹과, 모바일, 증강현실, 가상현실로 볼수있도록 해주는 멀티 플랫폼을 런칭하였고, 그 서비스의 FrontEnd와 간단한 Viewer 모듈을 개발하였다.<br />lambda 를 이용해 서버리스 api 로 서버와 통신, 3D모델은 S3를 이용했다.<br /><br />SCSS의 도움을 받아 반응형+적응형으로 되어있다.",
+      "desc": "사용자가 만든 3D 모델을 웹과 모바일, 증강현실, 가상현실에서 볼 수 있게 해 주는 멀티 플랫폼을 런칭했습니다. 이 서비스의 프론트엔드와 간단한 Viewer 모듈을 개발했습니다.<br><br>서버 통신은 Lambda 기반 서버리스 API로 처리하고 3D 모델은 S3에 뒀습니다. 화면은 SCSS를 활용해 반응형과 적응형을 함께 적용했습니다.",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3, Unity",
-        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
+        "프레임워크 : Node.js, Vue, Nuxt, Vuex",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
         "디자인협업 : zeplin.io"
       ],
@@ -666,7 +678,7 @@
           "code": "pcweb",
           "title": "PC웹",
           "img": "./projects/arscale/arscale_004.png",
-          "desc": "Unity 3D뷰어를 이용해 Canvas 에서 3D 모델을 보여준다",
+          "desc": "Unity 3D 뷰어를 Canvas에 올려 3D 모델을 보여줍니다.",
           "screens": [
             {
               "title": "001 메인",
@@ -709,7 +721,7 @@
           "code": "mobile",
           "title": "모바일",
           "img": "./projects/arscale/arscale_mob_000.png",
-          "desc": "PHP 를 이용해 파일을 인덱싱하여 음악플레이어를 만듬,<br>jQuery를 이용 Html5 < audio > 태그를 이용해 자동 스트리밍하였다.",
+          "desc": "",
           "screens": [
             {
               "title": "000 메인페이지",
@@ -749,10 +761,10 @@
       "code": "studiob2b",
       "title": "Studio B2B ( 2019. 12 ~ 2022. 01 )",
       "img": "./projects/studiob2b/studiob2b_01.png",
-      "desc": "사용자들은 각자의 집을 검색해 미리 가구를 놓아보고 인테리어를 해볼 수 있고, 없는 도면은 직접 그려 가상의 공간을 꾸며볼 수 있습니다. 또한 3D 모델을 업로드할 수 있는데, 3d 파일들을 분석하고 구현하여 이 모델의 상세한 설정을 할 수 있게 되었고, 이를 기반으로 사내 AR 애플리케이션에서도 해당 3D 모델을 확인할 수 있게 되었습니다.<br/>이 프로젝트들은 기존 React 기반의 프로젝트에서 Vue(Nuxt) 기반으로 변경되었고, I18N을 이용해 다국어 처리도 함께 진행하면서 방식과 전략에 대해 깊이 있게 고민할 수 있었습니다.<br/>웹상에서는 한 개의 소스지만, 도메인 기반으로 각 비즈니스 업체 서비스로 분리됩니다. 기능상으로 큰 차이는 없지만, B2B 서비스에서는 도면 인테리어 상담 모델 업로드가 가능하고, 최근에는 이 가상공간을 초고화질로 렌더링하여 실제의 모습은 어떻게 보이게 되는지 사진처럼 볼 수 있도록 만들어졌습니다.<br/>B2B 서비스는 국내외 구분 없이 영역을 확장할 수 있도록 하였고, 각 채널의 고유한 영역에서 커스터마이징된 서비스를 제공할 수 있습니다.<br/>해당 프로젝트에서는 AWS 서버 세팅과 이동에 대한 설정을 대부분 직접 작업하였습니다.<br/><br/>https://contt.studio.urbanbase.com/",
+      "desc": "사용자들은 각자의 집을 검색해 미리 가구를 놓아보고 인테리어를 해볼 수 있고, 없는 도면은 직접 그려 가상의 공간을 꾸며볼 수 있습니다. 또한 3D 모델을 업로드할 수 있는데, 3d 파일들을 분석하고 구현하여 이 모델의 상세한 설정을 할 수 있게 되었고, 이를 기반으로 사내 AR 애플리케이션에서도 해당 3D 모델을 확인할 수 있게 되었습니다.<br/>이 프로젝트들은 기존 React 기반의 프로젝트에서 Vue(Nuxt) 기반으로 변경되었고, i18n을 이용해 다국어 처리도 함께 진행하면서 방식과 전략에 대해 깊이 있게 고민할 수 있었습니다.<br/>웹상에서는 한 개의 소스지만, 도메인 기반으로 각 비즈니스 업체 서비스로 분리됩니다. 기능상으로 큰 차이는 없지만, B2B 서비스에서는 도면 인테리어 상담 모델 업로드가 가능하고, 최근에는 이 가상공간을 초고화질로 렌더링하여 실제의 모습은 어떻게 보이게 되는지 사진처럼 볼 수 있도록 만들어졌습니다.<br/>B2B 서비스는 국내외 구분 없이 영역을 확장할 수 있도록 하였고, 각 채널의 고유한 영역에서 커스터마이징된 서비스를 제공할 수 있습니다.<br/>해당 프로젝트에서는 AWS 서버 세팅과 이동에 대한 설정을 대부분 직접 작업하였습니다.",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3",
-        "프레임워크&모듈 : NodeJS, VueJS, NuxtJS, Vuex, i18N, Axios, Unity3D",
+        "프레임워크&모듈 : Node.js, Vue, Nuxt, Vuex, i18n, Axios, Unity3D",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
         "디자인협업 : Figma"
       ],
@@ -796,7 +808,7 @@
       "desc": " 3D 가상인테리어 플랫폼을 넘어 실제의 인테리어와도 연결되도록 하기 위해, B2C 형태의 서비스를 개발했습니다. 국내에서 수집하고 직접 그려진 10만 개 이상의 도면과 국내외 업체와의 협업으로 모델링 된 1만 4천 개 이상의 3d 모델들을 통해 내가 사는 혹은 앞으로 살 집의 구조를 직접 경험하고 꾸며볼 수 있게 되었습니다. 그리고 이 데이터를 토대로 인테리어 상담을 신청할 수도 있도록 연결했습니다.<br/>이것의 개발과 함께 한국/일본의 지리정보테이터를 활용해 행정구역 표시를 형태에 맞게 변환해주는 프로그램을 제작했고, 도면 찾기 서비스 내 지도의 행정 구역표시에 사용되고 있습니다.<br/><br/>https://urbanbase.com/",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3",
-        "프레임워크&모듈 : NodeJS, VueJS, NuxtJS, Vuex, Axios, Unity3D",
+        "프레임워크&모듈 : Node.js, Vue, Nuxt, Vuex, Axios, Unity3D",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront, Codebuild)",
         "디자인협업 : Figma"
       ],
@@ -827,10 +839,10 @@
       "code": "itemflyer",
       "title": "아이템플라이어 게임아이템 거래소 ( 2020. 05 ~ 2021. 10, 투자대기 )",
       "img": "./projects/itemflyer/itemflyer_001.png",
-      "desc": "암호화폐 기반 게임아이템 거래소 서비스로 개발한 사이드 프로젝트로, 해당 프로젝트에서는 NodeJS 를 이용해 JWT 구현을 직접 진행했고, 외부 모듈을 사용하지않고 다날과 직접 컨택해 본인인증과, 가상계좌 기능을 사용할 수 있도록 api를 구성했다.",
+      "desc": "암호화폐 기반 게임 아이템 거래소로 만든 사이드 프로젝트입니다.<br><br>Node.js로 JWT를 직접 구현했고, 외부 모듈을 쓰지 않고 다날과 직접 연락해 본인인증과 가상계좌 기능을 붙일 수 있도록 API를 구성했습니다.",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3",
-        "프레임워크&모듈 : NodeJS, VueJS, Nuxt (With SSR), Vuex, JWT",
+        "프레임워크&모듈 : Node.js, Vue, Nuxt (With SSR), Vuex, JWT",
         "서버 : AWS (EC2)",
         "디자인협업 : zeplin"
       ],
@@ -869,7 +881,7 @@
       "desc": "한류열풍에 힘입어 일본내에서 한국물건의 수요가 커짐에따라 시작된 사이드 프로젝트입니다.<br/>자체 물품 외, 쿠팡/네이버쇼핑의 물건을 구매대행합니다.(크롤러 사용)<br/>기본적으로 한/일 언어를 지원하고, 일본내 결제서비스들을 이용하였습니다.",
       "tech": [
         "언어 : JavaScript, HTML5, CSS3(반응형)",
-        "프레임워크 : NodeJS, VueJS, Nuxt, Vuex",
+        "프레임워크 : Node.js, Vue, Nuxt, Vuex",
         "서버 : AWS (S3, EC2, Cloudfront)",
         "디자인협업 : Figma"
       ],
@@ -985,10 +997,10 @@
       "code": "theyeyak",
       "title": "더 예약 코드리뉴얼 ( 2022. 04 ~ 2022. 09 )",
       "img": "./projects/theyeyak/theyeyak_001.png",
-      "desc": "B2C 서비스인 더 예약사이트의 기능추가와 동시에, 성능 최적화를 위한 코드 리뉴얼을 진행했습니다. 기존 CRA로 시작된 파편화된 프로젝트에서 NextJS를 사용해 SSR을 이용했고 중첩된 Context를 Zustand 상태관리 라이브러리로 분리하고, react-query를 이용해 API 통신을 진행하여 에러를 핸들링하였고 이 기술들을 적절히 분리하고 조합하여 rendering과 통신을 최적화할 수 있었습니다. 거기에 hook-form을 이용해 직관적이고 합리적인 유효성 검사를 적용하였습니다.<br/>이에 더해 리소스 로드 성능을 늘이고, 서버부하를 줄여 사용자에게 안정적으로 서비스 하기위해 AWS Lambda@Edge를 이용해 리소스 최적화를 진행했습니다.<br/>이 코드 리뉴얼 작업을 통해 서버 부담을 줄이고 사용자에게 쾌적한 환경을 제공하게 되었습니다.<br/><br/>리뉴얼전) 27.1mb, finish 14.6s, domcontentloaded: 1.37s, load: 4.24s<br/>리뉴얼후) 7.8mb, finish 6.1, domcontentloaded: 0.2s, load: 349ms",
+      "desc": "B2C 서비스인 더 예약사이트의 기능추가와 동시에, 성능 최적화를 위한 코드 리뉴얼을 진행했습니다. 기존 CRA로 시작된 파편화된 프로젝트에서 Next.js를 사용해 SSR을 이용했고 중첩된 Context를 Zustand 상태관리 라이브러리로 분리하고, react-query를 이용해 API 통신을 진행하여 에러를 핸들링하였고 이 기술들을 적절히 분리하고 조합하여 rendering과 통신을 최적화할 수 있었습니다. 거기에 hook-form을 이용해 직관적이고 합리적인 유효성 검사를 적용하였습니다.<br/>이에 더해 리소스 로드 성능을 늘이고, 서버부하를 줄여 사용자에게 안정적으로 서비스 하기위해 AWS Lambda@Edge를 이용해 리소스 최적화를 진행했습니다.<br/>이 코드 리뉴얼 작업을 통해 서버 부담을 줄이고 사용자에게 쾌적한 환경을 제공하게 되었습니다.<br/><br/>리뉴얼전) 27.1mb, finish 14.6s, domcontentloaded: 1.37s, load: 4.24s<br/>리뉴얼후) 7.8mb, finish 6.1, domcontentloaded: 0.2s, load: 349ms",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3",
-        "프레임워크&모듈 : ReactJS, NextJS(SSR), react-query, hook-form, zustand(상태관리), emotion(styled component)",
+        "프레임워크&모듈 : React, Next.js(SSR), react-query, hook-form, Zustand(상태관리), emotion(styled component)",
         "서버 : AWS (S3, EC2, Lambda, Cloudfront)"
       ],
       "screens": [
@@ -1008,10 +1020,10 @@
       "code": "kt",
       "title": "KT통화비서 ( 2022. 05 ~ 2022. 08 )",
       "img": "./projects/kt/kt_1.jpeg",
-      "desc": "KT 통화비서 앱의 대규모 리뉴얼로, 테이블 매니저의 예약 서비스를 전략적으로 연동 서비스하게 되었습니다. SI와는 다르게, 서비스의 핵심만을 요약하여, KT 측에 API 형태로 제공하고, 클라이언트 서비스를 개발해 웹 뷰 형태로 제공했습니다.<br/>네이티브 앱과 웹뷰 사이의 통신에 대해도 방식을 직접 제안하여 적용되었습니다. 해당 개발은 Typescript 기반 React와 Zustand로 상태관리, react-query로 통신, 을 구현했습니다.<br/>통신 시 보안을 위해 키를 이용한 암호화를 진행하였고, 디버깅을 방지하기 위한 여러 가지 연구로 소스 보안에도 신경 썼습니다.<br/>다음에 이 서비스를 기반으로 다시 회사 서비스를 개편할 수 있도록 코드 및 성능 최적화에 초점을 맞추었습니다.<br/><br/>AppStore/PlayStore ->KT 통화비서->예약관리",
+      "desc": "KT 통화비서 앱 리뉴얼에 맞춰, 테이블매니저의 예약 서비스를 연동 형태로 제공하는 작업을 했습니다. SI와 달리 서비스의 핵심만 추려 KT 측에 API로 제공하고, 클라이언트는 웹뷰로 붙였습니다.<br><br>네이티브 앱과 웹뷰 사이의 통신 방식을 직접 제안해 그대로 적용됐습니다. TypeScript 기반 React에 Zustand로 상태 관리, react-query로 통신을 구성했습니다.<br><br>통신 구간은 키 기반 암호화를 적용했고, 배포 소스의 디버깅을 막는 방법도 함께 검토해 반영했습니다. 이후 자사 서비스를 이 코드 기반으로 다시 세울 수 있도록 구조를 정리해 두는 것을 목표로 했습니다.<br><br>AppStore / PlayStore → KT 통화비서 → 예약관리",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3",
-        "프레임워크&모듈 : ReactJS, Axios, react-query, hook-form, zustand(recoil), cryptoJS",
+        "프레임워크&모듈 : React, Axios, react-query, hook-form, Zustand, CryptoJS",
         "서버 : AWS (S3, Cloudfront)",
         "디자인협업 : Figma",
         "확인 : https://www.tablemanager.io/kt"
@@ -1103,7 +1115,7 @@
       "code": "setaws",
       "title": "AWS Tools ( 2019. 01 ~  )",
       "img": "./projects/setaws/setaws_01.png",
-      "desc": "프론트엔드 개발을 하면서제일 귀찮은 작업중 하나는 배포일것입니다. aws 환경을 이용하면서 한개의 계정만 사용한다면 문제가 없겠지만, 여러개의 계정을 사용한다면 기본적인 cli 기능으로는 절차가 복잡해집니다. 거기에 MFA까지 사용한다면 배포하면서 피로해질것입니다.\n그래서 제일 먼저 작업했던것이 프로필스위쳐 였습니다. 프로필간 변경을 파라미터 몇개로 자동화했습니다.\n그 후 프론트 개발의 대부분이 빌드후 정적호스팅과 cloudfront invalidation 작업이 필요했기때문에 이 작업들도  자동화했습니다. ",
+      "desc": "프론트엔드 개발에서 제일 귀찮은 일 하나가 배포입니다. AWS 계정이 하나면 괜찮지만 여러 개를 쓰면 기본 CLI만으로는 절차가 복잡해지고, MFA까지 걸려 있으면 배포마다 피로가 쌓입니다.<br><br>그래서 가장 먼저 프로필 스위처를 만들어, 계정 간 전환을 파라미터 몇 개로 끝나게 했습니다.<br><br>이어서 프론트 배포 대부분이 빌드 후 정적 호스팅과 CloudFront invalidation으로 이어지기 때문에, 그 과정도 함께 자동화했습니다.",
       "tech": [
         "언어 : Bash",
         "모듈 : AWS CLI",
@@ -1126,10 +1138,10 @@
       "code": "acon3d",
       "title": "ACON3D 개발 및 유지보수 ( 2022.11 ~ 2024. 02 )",
       "img": "./projects/acon3d/acon_main.png",
-      "desc": "ACON3D 사이트를 개발 유지보수 했습니다. 해당 작업에는 사이트 개편과 성능최적화 및 커뮤니티 개발이 포함되어있습니다.",
+      "desc": "3D 에셋 마켓 ACON3D의 프론트엔드를 1년 4개월간 개발하고 유지보수했습니다.<br><br>사이트 개편과 커뮤니티 기능 개발을 맡았고, 데이터 계층은 GraphQL과 Apollo로 다뤘습니다. 상태 관리는 Zustand, 서버 상태는 react-query로 분리해 화면별 데이터 흐름을 단순하게 유지했습니다.",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3",
-        "프레임워크&모듈 : ReactJS, NextJS, graphQl, Apollo, Emotion, Axios, react-query, hook-form, zustand, Posgresql",
+        "프레임워크&모듈 : React, Next.js, GraphQL, Apollo, Emotion, Axios, react-query, hook-form, Zustand, PostgreSQL",
         "서버 : Vercel, AWS",
         "디자인협업 : Figma",
         "확인 : https://www.acon3d.com"
@@ -1159,12 +1171,12 @@
     },
     {
       "code": "hansin",
-      "title": "한신 콘설탄트 회사 홈페이지 제작 ( 2023.06 ~ 2023.10 )",
+      "title": "한신콘설탄트 회사 홈페이지 제작 ( 2023.06 ~ 2023.10 )",
       "img": "./projects/hansin/hansin_main.png",
-      "desc": "한신콘설탄트 의 회사 사이트 구축 프로젝트로 프로젝트 매니징, 기획, 및 프론트/백엔드 모두 개발을 진행 했습니다.",
+      "desc": "한신콘설탄트의 회사 사이트를 만들었습니다. 프로젝트 매니징과 기획부터 프론트엔드, 백엔드까지 전부 맡아 진행했습니다.<br><br>사업 분야 소개와 문의 접수가 중심인 사이트로, Next.js로 렌더링하고 PostgreSQL에 문의 데이터를 적재했습니다.",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3",
-        "프레임워크&모듈 : ReactJS, NextJS, Axios, react-query, hook-form, zustand, Posgresql",
+        "프레임워크&모듈 : React, Next.js, Axios, react-query, hook-form, Zustand, PostgreSQL",
         "서버 : Vercel",
         "디자인협업 : Figma",
         "확인 : https://www.hscont.co.kr"
@@ -1178,7 +1190,7 @@
         {
           "title": "문의하기",
           "img": "./projects/hansin/hansin_inquiry.png",
-          "desc": "사이트 내 문의하기로 NextJS 기반의 API 아키텍쳐를 이용해 백앤드까지 개발하여 진행했습니다."
+          "desc": "사이트 내 문의하기로 Next.js 기반의 API 아키텍쳐를 이용해 백앤드까지 개발하여 진행했습니다."
         }
       ]
     },
@@ -1186,13 +1198,12 @@
       "code": "dainsights",
       "title": "디지털자산평가서비스 프론트엔드개발 ( 2023.09 ~ 2023. 12 )",
       "img": "./projects/dainsights/dainsights_main.png",
-      "desc": "디지털자산의 평가의뢰와 평가 내용들, 현재 가치 등의 정보들을 한번에 확인할 수 있도록 서비스로 개발됨",
+      "desc": "디지털 자산 평가 서비스의 프론트엔드를 개발했습니다. 평가 의뢰부터 평가 내용, 현재 가치까지 한 화면에서 확인할 수 있게 만들었습니다.<br><br>자산별 상세와 하이라이트 목록, 검색을 각각 화면으로 나누고 지표 시각화에는 Recharts를 썼습니다.",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3",
-        "프레임워크&모듈 : ReactJS, NextJS, Rechart, Emotion, Axios, react-query, hook-form, zustand",
+        "프레임워크&모듈 : React, Next.js, Recharts, Emotion, Axios, react-query, hook-form, Zustand",
         "서버 : Vercel",
-        "디자인협업 : Figma",
-        "확인 : https://www.dainsights.com"
+        "디자인협업 : Figma"
       ],
       "screens": [
         {
@@ -1221,13 +1232,12 @@
       "code": "place",
       "title": "미용실 마케팅 도구 ( 2024.04 ~ )",
       "img": "./projects/place/10_place_rank.png",
-      "desc": "PWA로 제작된 네이버 내 플레이스(매장) 순위 관리 도구로, 매장내 고객관리 도구를 스크래핑해 고객 회원권 및 방문 정보를 확인할 수 있고, 푸시알림을 보내 마케팅에도 활용할 수 있습니다. 일반 고객에게 7월내로 공개 예정입니다.",
+      "desc": "PWA로 만든 네이버 플레이스(매장) 순위 관리 도구입니다. 매장 내 고객관리 시스템을 스크래핑해 고객 회원권과 방문 정보를 정리해 보여주고, 푸시 알림으로 마케팅 메시지를 보낼 수 있습니다.<br><br>키워드별 순위는 네이버 검색 결과를 직접 분석해 뽑았고, 이를 위해 GraphQL 쿼리 클라이언트를 직접 작성했습니다. 순위 변화와 함께 주요 변수의 추이를 같이 보여줘 무엇이 순위를 움직이는지 확인할 수 있게 했습니다.<br><br><span>개인 사이드 프로젝트로, 현재는 운영하지 않습니다.</span>",
       "tech": [
         "언어 : TypeScript, HTML5, CSS3",
-        "프레임워크&모듈 : ReactJS, NextJS14(appRouter), Supabase, Firebase, GraphQl, Rechart, tailwindCSS, hook-form, Axios",
+        "프레임워크&모듈 : React, Next.js 14 (App Router), Supabase, Firebase, GraphQL, Recharts, Tailwind CSS, hook-form, Axios",
         "서버 : Vercel, Supabase",
-        "디자인 : Figma, v0(Vercel AI)",
-        "확인 : https://place.sanguneo.com"
+        "디자인 : Figma, v0(Vercel AI)"
       ],
       "screens": [
         {
@@ -1273,7 +1283,7 @@
         {
           "title": "플레이스 순위 (키워드별)",
           "img": "./projects/place/10_place_rank.png",
-          "desc": "키워드별로 플레이스의 순위를 확인 할 수 있습니다. 네이버 검색을 분석해 내부적으로 직접 작성된 GraphQl쿼리 클라이언트를 이용해 검색결과를 받아오고, 이것들에서 순위를 추출합니다."
+          "desc": "키워드별로 플레이스의 순위를 확인 할 수 있습니다. 네이버 검색을 분석해 내부적으로 직접 작성된 GraphQL쿼리 클라이언트를 이용해 검색결과를 받아오고, 이것들에서 순위를 추출합니다."
         },
         {
           "title": "플레이스 상세",
@@ -1290,14 +1300,14 @@
     {
       "code": "aegisep",
       "title": "아파트 관리 SaaS 사내 서비스 ( 2024. 05 ~ )",
-      "desc": "전국 아파트 관리사무소가 쓰는 관리 SaaS의 프론트엔드를 맡고 있습니다. 누적 11,563개 단지가 운영되고, ERP 대시보드 DAU는 5,200명입니다.<br><br>맡은 서비스들 :<br>· <strong>전자결재</strong> — 결재선/위임/반려 흐름과 문서 편집기<br>· <strong>비서</strong> — 관리소 업무 일정과 알림을 모으는 개인화 홈<br>· <strong>전자공문 발송</strong> — 한전·소방청 등 기관 공문 발송, 7,000개 이상 단지 사용<br>· <strong>사진보드판</strong> — 현장 사진을 위치·공정별로 정리하는 보드<br>· <strong>FMS 장기수선계획</strong> — 수선 항목 입력과 보고서 산출<br>· <strong>운영 자동화</strong> — cron 기반 서비스 점검, 20~30분 수동 점검을 30초로 단축<br>· <strong>사내 LLM 게이트웨이</strong> — 자체 추론 환경 + 코드리뷰 자동화<br><br>레거시 전환도 함께 했습니다. CRA를 Next.js SSR로 옮겨 초기 로딩 4.24초를 0.3초로, 번들 27.1MB를 7.8MB로 줄였습니다. 개발 관련 CS 비율은 60%에서 30%로 내려갔습니다.<br><br><span>사내 서비스라 화면은 공개하지 않습니다.</span>",
+      "desc": "전국 아파트 관리사무소가 쓰는 관리 SaaS의 프론트엔드를 맡고 있습니다. 누적 11,563개 단지가 운영되고, ERP 대시보드 DAU는 5,200명입니다.<br><br>맡은 서비스들 :<br>· <strong>전자결재</strong> — 결재선/위임/반려 흐름과 문서 편집기<br>· <strong>비서</strong> — 관리소 업무 일정과 알림을 모으는 개인화 홈<br>· <strong>전자공문 발송</strong> — 한전·소방청 등 기관 공문 발송, 7,000개 이상 단지 사용<br>· <strong>사진보드판</strong> — 현장 사진을 위치·공정별로 정리하는 보드<br>· <strong>FMS 장기수선계획</strong> — 수선 항목 입력과 보고서 산출<br>· <strong>운영 자동화</strong> — cron 기반 서비스 점검, 20~30분 수동 점검을 30초로 단축<br>· <strong>사내 LLM 게이트웨이</strong> — 자체 추론 환경 + 코드리뷰 자동화<br><br>운영 안정성 쪽도 함께 맡았습니다. Sentry와 DataDog으로 관측 체계를 세우고, cron 기반 점검 자동화로 장애 징후를 미리 잡았습니다. 개발 관련 CS 비율은 60%에서 30%로 내려갔습니다.<br><br><span>사내 서비스라 화면은 공개하지 않습니다.</span>",
       "tech": [
         "언어 : TypeScript",
         "프레임워크 : React, Next.js(SSR), Vue, Nuxt",
         "관측 : Sentry, DataDog",
         "자동화 : cron 기반 점검, MCP 서버",
         "LLM : AWS EC2 + RunPod H100 자체 게이트웨이",
-        "성과 : 로딩 4.24s→0.3s / 번들 27.1MB→7.8MB / CS 60%→30%",
+        "성과 : 개발 CS 비율 60%→30% / 운영 점검 20~30분→30초",
         "규모 : 누적 11,563개 단지, ERP 대시보드 DAU 5,200"
       ]
     },
